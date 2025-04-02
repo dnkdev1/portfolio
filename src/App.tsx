@@ -1,5 +1,4 @@
 import './App.css'
-import styled from "styled-components";
 import { Header } from './layout/sections/header/Header';
 import { Main } from './layout/sections/main/Main';
 import { About } from './layout/sections/about/About';

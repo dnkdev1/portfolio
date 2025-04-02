@@ -1,6 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
+import {Theme} from "../../../styles/Theme.ts";
 
 export const Contacts = () => {
     return (
@@ -26,7 +26,7 @@ font-weight: 700;
 font-size: 58px;
 line-height: 70px;
 letter-spacing: -1px;
-color: #1E0E62;
+color: ${Theme.colors.thirdLightModeText};
 `
 
 const ContactsMail = styled.h2`
@@ -35,5 +35,5 @@ font-weight: 700;
 font-size: 58px;
 line-height: 70px;
 letter-spacing: -1px;
-color: #13B0F5
+color: ${Theme.colors.contactText};
 `

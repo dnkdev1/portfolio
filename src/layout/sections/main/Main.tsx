@@ -1,7 +1,7 @@
-import React from "react";
 import styled from "styled-components";
 import photo from '../../../assets/images/photo.png'
 import { FlexWrapper } from "../../../components/FlexWrapper";
+import { Theme } from "../../../styles/Theme";
 
 export const Main = () => {
     return (
@@ -36,5 +36,5 @@ font-weight: 700;
 font-size: 58px;
 line-height: 70px;
 letter-spacing: -1px;
-color: #42446E;
+color: ${Theme.colors.secondaryLightModeText};
 `

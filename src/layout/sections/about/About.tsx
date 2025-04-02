@@ -1,10 +1,8 @@
-import React from "react";
 import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Icon } from "../../../components/icon/Icon";
 import { InfoBar } from "../../../components/infoBar/InfoBar";
-
-const items = []
+import {Theme} from "../../../styles/Theme.ts";
 
 export const About = () => {
     return (
@@ -75,7 +73,7 @@ font-weight: 700;
 font-size: 42px;
 line-height: 52px;
 letter-spacing: -0.4px;
-color: #42446E;
+color: ${Theme.colors.secondaryLightModeText};
 `
 
 const AboutText = styled.p`
@@ -84,5 +82,5 @@ font-weight: 400;
 font-size: 18px;
 line-height: 26px;
 letter-spacing: 0px;
-color: #666666;
+color: ${Theme.colors.primaryLightModeText};
 `

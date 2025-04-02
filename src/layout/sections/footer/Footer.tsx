@@ -1,9 +1,9 @@
-import React from 'react';
 import styled from 'styled-components';
 import { Logo } from '../../../components/logo/Logo';
 import { Menu } from '../../../components/menu/Menu';
 import { Icon } from '../../../components/icon/Icon';
 import { FlexWrapper } from '../../../components/FlexWrapper';
+import { Theme } from '../../../styles/Theme';
 
 const items = ["Home", "About", "Technologies", "Projects", "Contact"]
 
@@ -40,7 +40,7 @@ font-weight: 400;
 font-size: 18px;
 line-height: 26px;
 letter-spacing: 0px;
-color: #42446E;
+color: ${Theme.colors.primaryLightModeText};
 `
 
 const Devider = styled.hr`

@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { FlexWrapper } from "../../../components/FlexWrapper";
@@ -9,6 +8,7 @@ import project3 from "./../../../assets/images/projects/project3.png";
 import project4 from "./../../../assets/images/projects/project4.png";
 import project5 from "./../../../assets/images/projects/project5.png";
 import project6 from "./../../../assets/images/projects/project6.png";
+import { Theme } from "../../../styles/Theme";
 
 export const Projects = () => {
     return (
@@ -65,6 +65,6 @@ font-weight: 400;
 font-size: 32px;
 line-height: 26px;
 letter-spacing: 0px;
-color: #666666;
+color:${Theme.colors.primaryLightModeText};
 text-align: center;
 `

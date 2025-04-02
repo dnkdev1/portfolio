@@ -1,7 +1,5 @@
-import React from "react";
 import styled from "styled-components";
 
-const MainUrl: string = "http://localhost:5174/"
 const Sign: string = "#"
 
 function GetUrl(sectionId: string): string {
