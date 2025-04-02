@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Sign: string = "#"
 
 function GetUrl(sectionId: string): string {
-    let url: string = Sign + sectionId
+    const url: string = Sign + sectionId
     return url
 }
 
