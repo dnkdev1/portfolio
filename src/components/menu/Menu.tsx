@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
-const Sign: string = "#"
-
 function GetUrl(sectionId: string): string {
-    const url: string = Sign + sectionId
-    return url
+    return "#" + sectionId
 }
 
 export const Menu = (props: { menuItems: Array<string> }) => {
@@ -23,20 +20,20 @@ export const Menu = (props: { menuItems: Array<string> }) => {
 };
 
 const StyledMenu = styled.nav`
-ul {
-display: flex;
-gap: 30px;
-justify-content: center;
-}
+    ul {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
 `
 
 const StyledLi = styled.li`
-list-style-type: none;
-font-family: "DM Sans";
-font-weight: 500;
-font-size: 20px;
-line-height: 26px;
-letter-spacing: 0px;
-color: #666666;
+    list-style-type: none;
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #666666;
 `
 

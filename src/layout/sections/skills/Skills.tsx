@@ -3,34 +3,34 @@ import {Icon} from "../../../components/icon/Icon";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Theme} from "../../../styles/Theme";
+import {Container} from "../../../components/Container";
 
 export const Skills = () => {
     return (
         <StyledSkills id="Tech Stack">
-            <SectionTitle>My Tech Stack</SectionTitle>
-            <Text> Technologies I’ve been working with recently</Text>
-            <FlexWrapper wrap={"wrap"} justify={"space-between"}>
-                <Icon iconId={"html"}/>
-                <Icon iconId={"css"}/>
-                <Icon iconId={"js"}/>
-                <Icon iconId={"react"}/>
-                <Icon iconId={"redux"}/>
-                <Icon iconId={"bootstrap"}/>
+            <Container>
+                <SectionTitle>My Tech Stack</SectionTitle>
+                <Text> Technologies I’ve been working with recently</Text>
+                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
+                    <Icon iconId={"html"}/>
+                    <Icon iconId={"css"}/>
+                    <Icon iconId={"js"}/>
+                    <Icon iconId={"react"}/>
+                    <Icon iconId={"redux"}/>
+                    <Icon iconId={"bootstrap"}/>
+                </FlexWrapper>
+                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
+                    <Icon iconId={"tailwind"}/>
+                    <Icon iconId={"sass"}/>
+                    <Icon iconId={"git"}/>
+                    <Icon iconId={"cib_greensock"}/>
+                    <Icon iconId={"vscode"}/>
+                    <Icon iconId={"github2"}/>
 
-            </FlexWrapper>
-            <FlexWrapper wrap={"wrap"} justify={"space-between"}>
-                <Icon iconId={"tailwind"}/>
-                <Icon iconId={"sass"}/>
-                <Icon iconId={"git"}/>
-                <Icon iconId={"cib_greensock"}/>
-                <Icon iconId={"vscode"}/>
-                <Icon iconId={"github2"}/>
-
-            </FlexWrapper>
+                </FlexWrapper>
+            </Container>
         </StyledSkills>
-
     );
-
 };
 
 const StyledSkills = styled.section`

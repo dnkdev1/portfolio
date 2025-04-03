@@ -3,10 +3,12 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Icon } from "../../../components/icon/Icon";
 import { InfoBar } from "../../../components/infoBar/InfoBar";
 import {Theme} from "../../../styles/Theme.ts";
+import {Container} from "../../../components/Container.ts";
 
 export const About = () => {
     return (
         <StyledAbout id="About">
+            <Container>
             <FlexWrapper>
             <div>
                 <AboutTitle>About Me</AboutTitle>
@@ -59,6 +61,7 @@ export const About = () => {
 
             <Icon iconId={"sq"} width={"800"} height={"800"} viewBox={"-180 0 800 800"} />
             </FlexWrapper>
+            </Container>
         </StyledAbout>
     );
 };

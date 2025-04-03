@@ -9,10 +9,12 @@ import project4 from "./../../../assets/images/projects/project4.png";
 import project5 from "./../../../assets/images/projects/project5.png";
 import project6 from "./../../../assets/images/projects/project6.png";
 import { Theme } from "../../../styles/Theme";
+import {Container} from "../../../components/Container.ts";
 
 export const Projects = () => {
     return (
         <StyledProjects id="Projects">
+            <Container>
             <SectionTitle>Projects</SectionTitle>
             <DescriptionTitle>Things I’ve built so far</DescriptionTitle>
             <FlexWrapper justify={"space-around"}>
@@ -49,6 +51,7 @@ export const Projects = () => {
                     text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
                 />
             </FlexWrapper>
+                </Container>
         </StyledProjects>
     );
 
