@@ -2,11 +2,19 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Theme} from "../../../styles/Theme.ts";
 import {Container} from "../../../components/Container.ts";
+import {Button} from "../../../components/Button.tsx";
 
 export const Contacts = () => {
     return (
         <StyledContacts id="Contact">
             <Container>
+                <StyledForm>
+                    <Field placeholder="Name"/>
+                    <Field placeholder="Subject"/>
+                    <Field as={"textarea"} placeholder="Message"/>
+                    <Button type={"submit"}>Send message</Button>
+                </StyledForm>
+
                 <FlexWrapper align={"center"} justify={"space-around"}>
                     <ContactsTitle>For any questions please mail me:</ContactsTitle>
                 </FlexWrapper>
@@ -19,8 +27,8 @@ export const Contacts = () => {
 
 };
 
-const StyledContacts = styled.div`
-    min-height: 20vh;
+const StyledContacts = styled.section`
+    min-height: 50vh;
 `
 
 const ContactsTitle = styled.p`
@@ -39,4 +47,16 @@ const ContactsMail = styled.h2`
     line-height: 70px;
     letter-spacing: -1px;
     color: ${Theme.colors.contactText};
+`
+
+const Field = styled.input`
+
+`
+
+const StyledForm = styled.form`
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 `
