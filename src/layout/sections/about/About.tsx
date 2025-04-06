@@ -59,7 +59,9 @@ export const About = () => {
                 />
             </div>
 
-            <Icon iconId={"sq"} width={"800"} height={"800"} viewBox={"-180 0 800 800"} />
+
+            <Icon iconId={"big-squer"} width={"1019"} height={"1019"} viewBox={"-180 0 800 800"} />
+
             </FlexWrapper>
             </Container>
         </StyledAbout>
@@ -77,6 +79,8 @@ font-size: 42px;
 line-height: 52px;
 letter-spacing: -0.4px;
 color: ${Theme.colors.secondaryLightModeText};
+    margin-top: 100px;
+    margin-bottom: 100px;
 `
 
 const AboutText = styled.p`

@@ -1,0 +1,42 @@
+.text-field {
+    position: relative;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    font-family: "Poppins";
+    font-size: 1rem;
+    outline: 1px solid grey;
+    padding: 0.5rem 0.2rem;
+    min-height: 70px;
+    width: 100%;
+
+}
+.text-field > label {
+    position: absolute;
+    left: 2px;
+    transition: 0.2s;
+    color: slategray;
+}
+
+/*input:focus-visible {*/
+/*    border-color: royalblue;*/
+/*}*/
+
+/*input:focus {*/
+/*    border-color: royalblue;*/
+/*}*/
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    transform: translateY(-0.5rem);
+    font-size: 0.8rem;
+    color: darkgrey;
+    background-color: white;
+}
+
+input::placeholder {
+    opacity: 0;
+}
+

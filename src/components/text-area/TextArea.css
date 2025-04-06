@@ -1,0 +1,36 @@
+.text-area{
+    position: relative;
+}
+
+#message{
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    padding: 10px;
+    font-family: "Poppins";
+    font-size: 1rem;
+    outline: 1px solid grey;
+    padding: 0.5rem 0.2rem;
+    min-height: 100px;
+    width: 100%;
+
+}
+
+.text-area > label {
+    position: absolute;
+    left: 5px;
+    transition: 0.2s;
+    color: slategray;
+}
+
+
+#message:focus + label,
+input:not(:placeholder-shown) + label {
+    transform: translateY(-0.5rem);
+    font-size: 0.8rem;
+    color: darkgrey;
+    background-color: white;
+}
+
+#message::placeholder {
+    opacity: 0;
+}

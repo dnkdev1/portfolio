@@ -10,7 +10,7 @@ export const Skills = () => {
         <StyledSkills id="Tech Stack">
             <Container>
                 <SectionTitle>My Tech Stack</SectionTitle>
-                <Text> Technologies I’ve been working with recently</Text>
+                <DescriptionTitle> Technologies I’ve been working with recently</DescriptionTitle>
                 <FlexWrapper wrap={"wrap"} justify={"space-between"}>
                     <Icon iconId={"html"}/>
                     <Icon iconId={"css"}/>
@@ -26,7 +26,6 @@ export const Skills = () => {
                     <Icon iconId={"cib_greensock"}/>
                     <Icon iconId={"vscode"}/>
                     <Icon iconId={"github2"}/>
-
                 </FlexWrapper>
             </Container>
         </StyledSkills>
@@ -37,7 +36,7 @@ const StyledSkills = styled.section`
     min-height: 50vh;
 `
 
-const Text = styled.article`
+const DescriptionTitle = styled.article`
     font-family: "Poppins";
     font-weight: 400;
     font-size: 32px;
@@ -45,6 +44,7 @@ const Text = styled.article`
     letter-spacing: 0px;
     color: ${Theme.colors.primaryLightModeText};
     text-align: center;
-    padding: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 `
 

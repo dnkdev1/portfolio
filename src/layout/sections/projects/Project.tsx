@@ -36,11 +36,12 @@ export const Project = (props: WorkPropsType) => {
 
 
 const StyledProject = styled.div`
-    background-color: #ffe869;
+    box-shadow: 5px 5px 5px grey, -5px -5px 5px lightgrey;
     max-width: 375px;
     width: 100%;
     height: 570px;
     margin-bottom: 50px;
+    border-radius: 10px;
 `
 
 const Image = styled.img`

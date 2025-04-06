@@ -3,16 +3,19 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Theme} from "../../../styles/Theme.ts";
 import {Container} from "../../../components/Container.ts";
 import {Button} from "../../../components/Button.tsx";
+import {TextField} from "../../../components/text-field/TextField.tsx";
+import {TextArea} from "../../../components/text-area/TextArea.tsx";
 
 export const Contacts = () => {
     return (
         <StyledContacts id="Contact">
             <Container>
                 <StyledForm>
-                    <Field placeholder="Name"/>
-                    <Field placeholder="Subject"/>
-                    <Field as={"textarea"} placeholder="Message"/>
-                    <Button type={"submit"}>Send message</Button>
+                    <TextField id="name" type={"name"} labelText={"Name"}/>
+                    <TextField id="email" type={"email"} labelText={"Email"}/>
+
+                    <TextArea id="message" labelText={"Message"}></TextArea>
+                    <Button type={"submit"}>Submit</Button>
                 </StyledForm>
 
                 <FlexWrapper align={"center"} justify={"space-around"}>
@@ -49,14 +52,11 @@ const ContactsMail = styled.h2`
     color: ${Theme.colors.contactText};
 `
 
-const Field = styled.input`
-
-`
-
 const StyledForm = styled.form`
     max-width: 500px;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    gap: 20px;
 `
