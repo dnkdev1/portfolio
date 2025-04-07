@@ -2,17 +2,6 @@
     position: relative;
 }
 
-input {
-    border: 1px solid black;
-    border-radius: 0.25rem;
-    font-family: "Poppins";
-    font-size: 1rem;
-    outline: 1px solid grey;
-    padding: 0.5rem 0.2rem;
-    min-height: 70px;
-    width: 100%;
-
-}
 .text-field > label {
     position: absolute;
     left: 2px;
@@ -20,13 +9,17 @@ input {
     color: slategray;
 }
 
-/*input:focus-visible {*/
-/*    border-color: royalblue;*/
-/*}*/
+input {
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    font-family: "Poppins";
+    font-size: 1rem;
+    outline: none;
+    padding: 0.5rem 0.2rem;
+    min-height: 50px;
+    width: 100%;
 
-/*input:focus {*/
-/*    border-color: royalblue;*/
-/*}*/
+}
 
 input:focus + label,
 input:not(:placeholder-shown) + label {
@@ -34,6 +27,9 @@ input:not(:placeholder-shown) + label {
     font-size: 0.8rem;
     color: darkgrey;
     background-color: white;
+    outline: none;
+    padding-right: 2px;
+    padding-left: 2px;
 }
 
 input::placeholder {

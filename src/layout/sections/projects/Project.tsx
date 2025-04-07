@@ -3,22 +3,25 @@ import {Icon} from "../../../components/icon/Icon";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Theme} from "../../../styles/Theme";
 
+
 type WorkPropsType = {
     src: string
     title: string
     text: string
-
-
 }
 
 export const Project = (props: WorkPropsType) => {
     return (
         <StyledProject id="Projects">
             <Image src={props.src} alt=""/>
-            <FlexWrapper direction={"column"} wrap={"wrap"}>
+            <FlexWrapper direction={"column"} wrap={"wrap"} >
+
+
                 <Title>{props.title}</Title>
+
                 <Description>{props.text}</Description>
                 <List>Tech stack : HTML , JavaScript, SASS, React</List>
+
                 <FlexWrapper justify={"space-between"}>
                     <FlexWrapper>
                         <Icon width={"20px"} height={"20px"} viewBox={"0 0 20px 20px"} iconId="clip"></Icon>
@@ -29,6 +32,8 @@ export const Project = (props: WorkPropsType) => {
                         <Link href={"#"}>View Code</Link>
                     </FlexWrapper>
                 </FlexWrapper>
+
+
             </FlexWrapper>
         </StyledProject>
     );

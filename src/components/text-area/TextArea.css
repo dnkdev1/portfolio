@@ -2,24 +2,22 @@
     position: relative;
 }
 
-#message{
-    border: 1px solid black;
-    border-radius: 0.25rem;
-    padding: 10px;
-    font-family: "Poppins";
-    font-size: 1rem;
-    outline: 1px solid grey;
-    padding: 0.5rem 0.2rem;
-    min-height: 100px;
-    width: 100%;
-
-}
-
 .text-area > label {
     position: absolute;
     left: 5px;
     transition: 0.2s;
     color: slategray;
+}
+
+#message{
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    font-family: "Poppins";
+    font-size: 1rem;
+    outline: none;
+    padding: 0.5rem 0.2rem;
+    min-height: 100px;
+    width: 100%;
 }
 
 
@@ -29,6 +27,9 @@ input:not(:placeholder-shown) + label {
     font-size: 0.8rem;
     color: darkgrey;
     background-color: white;
+    outline: none;
+    padding-right: 2px;
+    padding-left: 2px;
 }
 
 #message::placeholder {

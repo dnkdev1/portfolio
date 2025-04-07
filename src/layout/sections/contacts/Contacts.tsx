@@ -13,7 +13,6 @@ export const Contacts = () => {
                 <StyledForm>
                     <TextField id="name" type={"name"} labelText={"Name"}/>
                     <TextField id="email" type={"email"} labelText={"Email"}/>
-
                     <TextArea id="message" labelText={"Message"}></TextArea>
                     <Button type={"submit"}>Submit</Button>
                 </StyledForm>

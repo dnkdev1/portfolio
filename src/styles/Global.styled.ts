@@ -28,7 +28,26 @@ export const GlobalStyle = createGlobalStyle`
 
     button {
         background-color: unset;
-        border: unset;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        width: 150px;
+        height: 50px;
+        border-radius: 0.25rem;
+        border-width: 1px;
+        font-family: Poppins;
+        color: #666666;
+        font-size: 15px;
+    }
+
+    button:hover {
+        border-top-style: unset;
+        border-right-style: unset;
+        border-bottom-style: unset;
+        border-left-style: unset;
+        background-color: #A7A7A7;
+        color: #FFFFFF;
     }
 `
 
