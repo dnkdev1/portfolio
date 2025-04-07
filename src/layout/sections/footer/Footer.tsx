@@ -5,6 +5,7 @@ import {Icon} from '../../../components/icon/Icon';
 import {FlexWrapper} from '../../../components/FlexWrapper';
 import {Theme} from '../../../styles/Theme';
 import {Container} from "../../../components/Container";
+import {Link} from "../../../components/Link";
 
 const items = ["Home", "About", "Technologies", "Projects", "Contact"]
 
@@ -16,8 +17,10 @@ export const Footer = () => {
                     <Logo/>
                     <Text>+91 12345 09876</Text>
                     <Text>info@example.com</Text>
-                    <FlexWrapper>
-                        <Icon width={"30px"} height={"30px"} viewBox={"0 0 30px 30px"} iconId={"github"}/>
+                    <FlexWrapper gap={'20px'}>
+                        <Link href="https://github.com/dnkdev1">
+                            <Icon width={"30px"} height={"30px"} viewBox={"0 0 30px 30px"} iconId={"github"}/>
+                        </Link>
                         <Icon width={"30px"} height={"30px"} viewBox={"0 0 30px 30px"} iconId={"twitter"}/>
                         <Icon width={"30px"} height={"30px"} viewBox={"0 0 30px 30px"} iconId={"linkedin"}/>
                     </FlexWrapper>
