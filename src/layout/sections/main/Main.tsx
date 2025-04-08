@@ -10,20 +10,22 @@ export const Main = () => {
             <Container>
                 <FlexWrapper align={"center"} justify={"space-around"}>
                     <div>
-                        <Text>Hi 👋, My name is Pavan MG I build things for web</Text>
+                        <Text>Hi 👋, </Text>
+                        <Text>My name is</Text>
+                        <Text>Pavan MG</Text>
+                        <Text>I build things for web</Text>
                     </div>
                     <Photo src={photo} alt=""/>
                 </FlexWrapper>
             </Container>
         </StyledMain>
-
     );
-
 };
 
 const StyledMain = styled.section`
-    min-height: 50vh;
-    margin-top: 120px;
+    min-height: 40vh;
+    margin-top: 400px;
+    
 `
 
 const Photo = styled.img`
@@ -39,4 +41,5 @@ const Text = styled.article`
     line-height: 70px;
     letter-spacing: -1px;
     color: ${Theme.colors.secondaryLightModeText};
+    text-align: left;
 `

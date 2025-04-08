@@ -13,7 +13,7 @@ export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <FlexWrapper justify={'space-between'}>
+                <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo/>
                     <Text>+91 12345 09876</Text>
                     <Text>info@example.com</Text>

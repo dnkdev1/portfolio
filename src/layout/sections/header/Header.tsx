@@ -13,8 +13,10 @@ export const Header = () => {
     return (
         <StyledHeader id="Home">
             <Container>
-                <FlexWrapper justify={"space-between"}>
+                <FlexWrapper justify={"space-between"} align={"center"}>
+
                     <Logo/>
+
                     <Menu menuItems={items}/>
                     <FlexWrapper gap={"20px"}>
                         <Link href="https://github.com/dnkdev1">
@@ -32,8 +34,7 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     background-color: ${Theme.colors.lightModeBg};
-    margin-top: 20px;
-    padding: 0px 0;
+    padding-top: 0px;
     position: fixed;
     top: 0;
     left: 0;

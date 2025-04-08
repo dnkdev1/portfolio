@@ -39,6 +39,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: Poppins;
         color: #666666;
         font-size: 15px;
+        border-radius: 0.5rem;
     }
 
     button:hover {

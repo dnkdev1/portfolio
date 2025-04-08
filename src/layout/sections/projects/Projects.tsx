@@ -17,7 +17,7 @@ export const Projects = () => {
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 <DescriptionTitle>Things I’ve built so far</DescriptionTitle>
-                <FlexWrapper justify={"space-around"}>
+                <FlexWrapper justify={"space-between"}>
                     <Project
                         src={project1}
                         title={"Project Tile goes here"}
@@ -70,6 +70,6 @@ const DescriptionTitle = styled.h3`
     letter-spacing: 0px;
     color: ${Theme.colors.primaryLightModeText};
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 200px;
 `

@@ -33,7 +33,7 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-    min-height: 50vh;
+    min-height: 90vh;
 `
 
 const DescriptionTitle = styled.article`
@@ -44,7 +44,6 @@ const DescriptionTitle = styled.article`
     letter-spacing: 0px;
     color: ${Theme.colors.primaryLightModeText};
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 200px;
 `
-

@@ -4,14 +4,14 @@
 
 .text-field > label {
     position: absolute;
-    left: 2px;
+    left: 10px;
     transition: 0.2s;
     color: slategray;
 }
 
 input {
     border: 1px solid black;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     font-family: "Poppins";
     font-size: 1rem;
     outline: none;
