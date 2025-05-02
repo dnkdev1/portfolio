@@ -36,7 +36,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-
+margin-top: 200px;
 `
 
 const Text = styled.p`

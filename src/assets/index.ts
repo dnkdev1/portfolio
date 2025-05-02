@@ -1,0 +1,1 @@
+export {default as abstract} from "./images/Abstract.svg"

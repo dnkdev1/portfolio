@@ -33,6 +33,7 @@ export const Contacts = () => {
 
 const StyledContacts = styled.section`
     min-height: 50vh;
+    margin-top: 230px;
 `
 
 const StyledForm = styled.form`

@@ -34,6 +34,7 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
     min-height: 90vh;
+    margin-top: 200px;
 `
 
 const DescriptionTitle = styled.article`

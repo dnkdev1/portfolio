@@ -7,9 +7,13 @@ import {Container} from '../../../components/Container';
 import {Theme} from "../../../styles/Theme.ts";
 import {Link} from "../../../components/Link.tsx";
 
+
+
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
 
 export const Header = () => {
+
+
     return (
         <StyledHeader id="Home">
             <Container>
@@ -25,6 +29,11 @@ export const Header = () => {
                         <Icon width={"30px"} height={"30px"} viewBox={"0 0 30px 30px"} iconId={"twitter"}/>
                         <Icon width={"30px"} height={"30px"} viewBox={"0 0 30px 30px"} iconId={"linkedin"}/>
                     </FlexWrapper>
+
+
+
+
+
                 </FlexWrapper>
 
             </Container>

@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import photo from '../../../assets/images/photo.png'
+import aroundPhoto from "../../../assets/images/Abstract.svg"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Theme} from "../../../styles/Theme";
 import {Container} from "../../../components/Container.ts";
+import myphoto from '../../../assets/images/myphoto.jpg'
 
 export const Main = () => {
     return (
@@ -15,7 +17,20 @@ export const Main = () => {
                         <Text>Pavan MG</Text>
                         <Text>I build things for web</Text>
                     </div>
-                    <Photo src={photo} alt=""/>
+
+                    {/*<Icon iconId={"aroundPhoto"} width="770" height="770" viewBox="0 0 770 770"/>*/}
+                    {/*<Photo id={"photo"} src={photo} alt=""/>*/}
+
+                    {/*<StyledDiv>
+                        <StyledImg id={"photo"} src={photo} alt=""/>
+
+                    </StyledDiv>*/}
+
+                    <StyledDiv>
+                        <StyledImg id={"my-photo"} src={myphoto} alt=""/>
+
+                    </StyledDiv>
+
                 </FlexWrapper>
             </Container>
         </StyledMain>
@@ -24,14 +39,19 @@ export const Main = () => {
 
 const StyledMain = styled.section`
     min-height: 40vh;
-    margin-top: 400px;
-    
+    margin-top: 246px;
 `
 
-const Photo = styled.img`
+const StyledDiv = styled.div`
+    border: 1px solid black;
+    background-image: url('Abstract.svg');
+`
+
+const StyledImg = styled.img`
     width: 349px;
-    height: 349px;
+    height: 600px;
     object-fit: cover;
+    background-image: ${aroundPhoto};
 `
 
 const Text = styled.article`

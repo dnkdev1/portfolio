@@ -19,7 +19,8 @@ export const Project = (props: WorkPropsType) => {
 
                 <Title>{props.title}</Title>
 
-                <Description>{props.text}</Description>
+                    <Description>{props.text}</Description>
+
                 <List>Tech stack : HTML , JavaScript, SASS, React</List>
 
                 <StyledWrapper>

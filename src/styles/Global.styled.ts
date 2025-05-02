@@ -16,6 +16,22 @@ export const GlobalStyle = createGlobalStyle`
         sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+
+
+        ////////////////////////////////////////////////////
+        
+        // background: ${props => props.theme.body};
+        // color: ${props => props.theme.textColor};
+        // transition: .3s ease;
+        //
+        // h2{
+        //     color: ${props => props.theme.headingColor};
+        // }
+        
+        ///////////////////////////////////////////////////
+        
+        
+        
     }
 
     a {
@@ -25,7 +41,7 @@ export const GlobalStyle = createGlobalStyle`
     ul {
         list-style: none;
     }
-
+    
     button {
         background-color: unset;
         border-top-style: solid;
@@ -51,4 +67,17 @@ export const GlobalStyle = createGlobalStyle`
         color: #FFFFFF;
     }
 `
+
+export const darkTheme = {
+    body: "#000",
+    textColor: "#fff",
+    headingColor: "lightblue"
+}
+
+export const lightTheme = {
+    body: "#fff",
+    textColor: "#000",
+    headingColor: "#d23669"
+}
+
 
