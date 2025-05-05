@@ -60,6 +60,7 @@ export const Projects = () => {
 
 const StyledProjects = styled.section`
     min-height: 100vh;
+    background-color: #343D68;
 `
 
 const DescriptionTitle = styled.h3`

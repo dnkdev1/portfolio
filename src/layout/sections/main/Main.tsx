@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import photo from '../../../assets/images/photo.png'
 import aroundPhoto from "../../../assets/images/Abstract.svg"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Theme} from "../../../styles/Theme";

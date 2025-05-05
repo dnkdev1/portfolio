@@ -6,10 +6,12 @@ import {FlexWrapper} from '../../../components/FlexWrapper';
 import {Theme} from '../../../styles/Theme';
 import {Container} from "../../../components/Container";
 import {Link} from "../../../components/Link";
+import {waveForFooter} from "../../../components/WaveForFooter.ts";
 
 const items = ["Home", "About", "Technologies", "Projects", "Contact"]
 
 export const Footer = () => {
+
     return (
         <StyledFooter>
             <Container>
@@ -37,6 +39,11 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
 margin-top: 200px;
+    background-image: url('data:image/svg+xml;utf8,${waveForFooter}');
+    min-height: 700px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 `
 
 const Text = styled.p`
