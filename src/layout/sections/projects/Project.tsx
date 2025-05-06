@@ -11,9 +11,12 @@ export const Project = (props: WorkPropsType) => {
     return (
         <StyledProject id="Projects">
             <Image src={props.src} alt=""/>
-            <FlexWrapper direction={"column"} wrap={"wrap"} align={"center"}>
+            <FlexWrapper justify={"space-between"} direction={"column"} wrap={"wrap"} align={"center"}>
+                <StyledDiv>
                     <Description>{props.text}</Description>
+                </StyledDiv>
                 <Button type={"submit"}>Learn More</Button>
+
             </FlexWrapper>
 
         </StyledProject>
@@ -45,4 +48,7 @@ const Description = styled.p`
     color: #FFFFFF;
     text-align: center;
     padding: 20px;
+`
+const StyledDiv = styled.div`
+    min-height: 100px;
 `

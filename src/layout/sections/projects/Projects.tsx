@@ -48,5 +48,5 @@ const StyledTitle = styled.h2`
     color: #FFFFFF;
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 25px;
+    margin-bottom: 200px;
 `
