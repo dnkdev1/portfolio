@@ -29,11 +29,10 @@ const StyledMenu = styled.nav`
 
 const StyledLi = styled.li`
     list-style-type: none;
-    font-family: "DM Sans";
+    font-family: "Be Vietnam";
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
     letter-spacing: 0px;
-    color: #666666;
 `
 

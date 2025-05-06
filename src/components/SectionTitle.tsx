@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 export const SectionTitle = styled.h2`
-    font-family: "Poppins";
-    font-weight: 700;
+    font-family: "Be Vietnam";
+    font-weight: 500;
     font-size: 48px;
     line-height: 26px;
     letter-spacing: 0px;

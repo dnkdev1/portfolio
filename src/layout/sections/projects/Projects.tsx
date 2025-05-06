@@ -1,76 +1,52 @@
 import styled from "styled-components";
-import {SectionTitle} from "../../../components/SectionTitle";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Project} from "./Project";
-import project1 from "./../../../assets/images/projects/project1.png";
-import project2 from "./../../../assets/images/projects/project2.png";
-import project3 from "./../../../assets/images/projects/project3.png";
-import project4 from "./../../../assets/images/projects/project4.png";
-import project5 from "./../../../assets/images/projects/project5.png";
-import project6 from "./../../../assets/images/projects/project6.png";
-import {Theme} from "../../../styles/Theme";
+import projectImage1 from "../../../assets/images/projects/projectImg1.png"
+import projectImage2 from "../../../assets/images/projects/projectImg2.png"
+import projectImage3 from "../../../assets/images/projects/projectImg3.png"
 import {Container} from "../../../components/Container.ts";
+
 
 export const Projects = () => {
     return (
         <StyledProjects id="Projects">
             <Container>
-                <SectionTitle>Projects</SectionTitle>
-                <DescriptionTitle>Things I’ve built so far</DescriptionTitle>
+                <StyledTitle>Projects</StyledTitle>
+
                 <FlexWrapper justify={"space-between"}>
                     <Project
-                        src={project1}
-                        title={"Project Tile goes here"}
-                        text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                        src={projectImage1}
+                        text={"Made a social media manager template using HTML 5, CSS and JS."}
                     />
                     <Project
-                        src={project2}
-                        title={"Project Tile goes here"}
-                        text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                        src={projectImage2}
+                        text={"Made a simple card page using HTML 5 and  CSS 3"}
                     />
                     <Project
-                        src={project3}
-                        title={"Project Tile goes here"}
-                        text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                        src={projectImage3}
+                        text={"Made an I.P address tracking website."}
                     />
                 </FlexWrapper>
-                <FlexWrapper justify={"space-around"}>
-                    <Project
-                        src={project4}
-                        title={"Project Tile goes here"}
-                        text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                    />
-                    <Project
-                        src={project5}
-                        title={"Project Tile goes here"}
-                        text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                    />
-                    <Project
-                        src={project6}
-                        title={"Project Tile goes here"}
-                        text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                    />
-                </FlexWrapper>
+
             </Container>
         </StyledProjects>
     );
 
 };
 
-
 const StyledProjects = styled.section`
     min-height: 100vh;
     background-color: #343D68;
 `
 
-const DescriptionTitle = styled.h3`
-    font-family: "Poppins";
-    font-weight: 400;
-    font-size: 32px;
+const StyledTitle = styled.h2`
+    font-family: "Be Vietnam";
+    font-weight: 500;
+    font-size: 48px;
     line-height: 26px;
     letter-spacing: 0px;
-    color: ${Theme.colors.primaryLightModeText};
+    color: #FFFFFF;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 200px;
+    margin-top: 100px;
+    margin-bottom: 25px;
 `

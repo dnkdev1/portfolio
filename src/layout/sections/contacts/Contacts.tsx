@@ -5,26 +5,27 @@ import {Container} from "../../../components/Container.ts";
 import {Button} from "../../../components/Button.tsx";
 import {TextField} from "../../../components/text-field/TextField.tsx";
 import {TextArea} from "../../../components/text-area/TextArea.tsx";
+import locationMap from "../../../assets/images/Map.jpg";
 
 export const Contacts = () => {
     return (
         <StyledContacts id="Contact">
             <Container>
                 <FlexWrapper align={"center"} justify={"space-around"}>
-                    <ContactsTitle>For any questions please mail me:</ContactsTitle>
+                    <ContactsTitle>Contact me:</ContactsTitle>
                 </FlexWrapper>
 
-                <StyledForm>
-                    <TextField id="name" type={"name"} labelText={"Name"}/>
-                    <TextField id="email" type={"email"} labelText={"Email"}/>
-                    <TextArea id="message" labelText={"Message"}></TextArea>
-                    <Button type={"submit"}>Submit</Button>
-                </StyledForm>
+                <FlexWrapper>
+                    <StyledImg id={"locationMap"} src={locationMap} alt=""/>
 
-
-                <FlexWrapper align={"center"} justify={"space-around"}>
-                    {/*<ContactsMail>hi@pavanmg.in</ContactsMail>*/}
+                    <StyledForm>
+                        <TextField id="name" type={"name"} labelText={"Name"}/>
+                        <TextField id="email" type={"email"} labelText={"Email"}/>
+                        <TextArea id="message" labelText={"Message"}></TextArea>
+                        <Button type={"submit"}>Submit</Button>
+                    </StyledForm>
                 </FlexWrapper>
+
             </Container>
         </StyledContacts>
     );
@@ -33,7 +34,7 @@ export const Contacts = () => {
 
 const StyledContacts = styled.section`
     min-height: 50vh;
-    margin-top: 230px;
+    margin-top: 0px;
 `
 
 const StyledForm = styled.form`
@@ -46,13 +47,20 @@ const StyledForm = styled.form`
 `
 
 const ContactsTitle = styled.p`
-    font-family: "Poppins";
-    font-weight: 700;
+    font-family: "Be Vietnam";
+    font-weight: 500;
     font-size: 58px;
     line-height: 70px;
     letter-spacing: -1px;
     color: ${Theme.colors.thirdLightModeText};
     margin-bottom: 50px;
+`
+
+const StyledImg = styled.img`
+    width: 506px;
+    height: 506px;
+    object-fit: cover;
+    background-image: ${locationMap};
 `
 
 // const ContactsMail = styled.h2`
