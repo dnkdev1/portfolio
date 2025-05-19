@@ -1,13 +1,14 @@
 import styled from "styled-components"
 
-export const SectionTitle = styled.h2`
-    font-family: "Be Vietnam";
+type SectionTitleType = {
+    color?: string
+}
+
+export const SectionTitle = styled.h1<SectionTitleType>`
+    font-family: "Be Vietnam", sans-serif;
     font-weight: 500;
-    font-size: 48px;
-    line-height: 26px;
-    letter-spacing: 0px;
-    color: #42446E;
+    font-size: 20px;
+    color: ${props => props.color || "black"};
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 `

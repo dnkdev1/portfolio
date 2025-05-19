@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import aroundPhoto from "../../../assets/images/Abstract.svg"
+import zigzag from "../../../assets/images/zigzag.svg"
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Theme} from "../../../styles/Theme";
 import {Container} from "../../../components/Container.ts";
 import myphoto from '../../../assets/images/myphoto.jpg'
+import {Button} from "../../../components/Button.tsx";
 
 export const Main = () => {
     return (
@@ -11,54 +11,78 @@ export const Main = () => {
             <Container>
                 <FlexWrapper align={"center"} justify={"space-around"}>
                     <div>
-                        <Text>Hi 👋, </Text>
-                        <Text>My name is</Text>
-                        <Text>Pavan MG</Text>
-                        <Text>I build things for web</Text>
+                        <Text>Hi 👋, I’m a</Text>
+                        <Text>Software Developer</Text>
+                        <SmallText>I’m John Doe, a developer dedicated to making the world a</SmallText>
+                        <SmallText>better place one line of code at a time.</SmallText>
+                        <FlexWrapper align={"start"}>
+                        <Button type={"submit"}>Hire me</Button>
+                        </FlexWrapper>
                     </div>
 
-                    {/*<Icon iconId={"aroundPhoto"} width="770" height="770" viewBox="0 0 770 770"/>*/}
-                    {/*<Photo id={"photo"} src={photo} alt=""/>*/}
-
-                    {/*<StyledDiv>
-                        <StyledImg id={"photo"} src={photo} alt=""/>
-
-                    </StyledDiv>*/}
 
                     <StyledDiv>
-                        <StyledImg id={"my-photo"} src={myphoto} alt=""/>
+                        <StyledImg id={"myphoto"} src={myphoto} alt=""/>
 
                     </StyledDiv>
 
                 </FlexWrapper>
+
+
+
             </Container>
         </StyledMain>
     );
 };
 
 const StyledMain = styled.section`
-    min-height: 40vh;
-    margin-top: 246px;
+    height: 495px;
+    margin-top: 100px;
 `
 
 const StyledDiv = styled.div`
     border: 1px solid black;
-    background-image: url('Abstract.svg');
+    position: relative;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 42px;
+        height: 102px;
+        /*background-image: url(${zigzag});*/
+        /*background-image: url(./../../assets/images/zigzag.svg);*/
+        background-image: url(./zigzag.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: -40px;
+    }
 `
 
 const StyledImg = styled.img`
-    width: 349px;
-    height: 600px;
+    width: 410px;
+    height: 495px;
     object-fit: cover;
-    background-image: ${aroundPhoto};
 `
 
 const Text = styled.article`
-    font-family: "Poppins";
-    font-weight: 700;
-    font-size: 58px;
-    line-height: 70px;
-    letter-spacing: -1px;
-    color: ${Theme.colors.secondaryLightModeText};
+    font-family: "Be Vietnam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.176;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #343d68;
+    text-align: left;
+`
+
+const SmallText = styled.p`
+    font-family: "Be Vietnam", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.176;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.7);
     text-align: left;
 `

@@ -1,29 +1,35 @@
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Theme} from "../../../styles/Theme.ts";
 import {Container} from "../../../components/Container.ts";
 import {Button} from "../../../components/Button.tsx";
 import {TextField} from "../../../components/text-field/TextField.tsx";
 import {TextArea} from "../../../components/text-area/TextArea.tsx";
-import locationMap from "../../../assets/images/Map.jpg";
+import {Icon} from "../../../components/icon/Icon.tsx";
+import {SectionTitle} from "../../../components/SectionTitle.tsx";
+import paperplane from "../../../assets/images/paperplane.png"
 
 export const Contacts = () => {
     return (
-        <StyledContacts id="Contact">
+        <StyledContacts id="Contacts">
             <Container>
                 <FlexWrapper align={"center"} justify={"space-around"}>
-                    <ContactsTitle>Contact me:</ContactsTitle>
+                    <SectionTitle color={"#e84949"}>Contact me</SectionTitle>
                 </FlexWrapper>
 
-                <FlexWrapper>
-                    <StyledImg id={"locationMap"} src={locationMap} alt=""/>
+                <FlexWrapper justify={"space-between"}>
+                    <LeftSide>
+                        <Icon iconId={"man2"} width={"563px"} height={"412px"} viewBox={"0 0 563 412"}/>
+                    </LeftSide>
 
-                    <StyledForm>
-                        <TextField id="name" type={"name"} labelText={"Name"}/>
-                        <TextField id="email" type={"email"} labelText={"Email"}/>
-                        <TextArea id="message" labelText={"Message"}></TextArea>
-                        <Button type={"submit"}>Submit</Button>
-                    </StyledForm>
+                    <RightSide>
+                        <StyledForm>
+                            <TextField id="email" type={"email"} labelText={"Enter email address"}/>
+                            <TextArea id="message" labelText={"Enter message"}></TextArea>
+                            <Button type={"submit"} color={"#343d68"} width={"213px"} height={"50px"}>Send Message<img
+                                src={paperplane} alt=""/>
+                            </Button>
+                        </StyledForm>
+                    </RightSide>
                 </FlexWrapper>
 
             </Container>
@@ -33,42 +39,26 @@ export const Contacts = () => {
 };
 
 const StyledContacts = styled.section`
-    min-height: 50vh;
-    margin-top: 0px;
+    /*width: 1241px;*/
+    height: 412px;
+    margin-top: 74px;
 `
 
 const StyledForm = styled.form`
     max-width: 500px;
-    width: 100%;
+    width: 613px;
+    height: 347px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     gap: 20px;
 `
 
-const ContactsTitle = styled.p`
-    font-family: "Be Vietnam";
-    font-weight: 500;
-    font-size: 58px;
-    line-height: 70px;
-    letter-spacing: -1px;
-    color: ${Theme.colors.thirdLightModeText};
-    margin-bottom: 50px;
+const LeftSide = styled.div`
+
 `
 
-const StyledImg = styled.img`
-    width: 506px;
-    height: 506px;
-    object-fit: cover;
-    background-image: ${locationMap};
-`
+const RightSide = styled.div`
 
-// const ContactsMail = styled.h2`
-//     font-family: "DM Sans";
-//     font-weight: 700;
-//     font-size: 58px;
-//     line-height: 70px;
-//     letter-spacing: -1px;
-//     color: ${Theme.colors.contactText};
-// `
+`
 

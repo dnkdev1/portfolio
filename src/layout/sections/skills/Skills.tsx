@@ -2,49 +2,54 @@ import styled from "styled-components";
 import {Icon} from "../../../components/icon/Icon";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
-import {Theme} from "../../../styles/Theme";
 import {Container} from "../../../components/Container";
 
 export const Skills = () => {
     return (
-        <StyledSkills id="Tech Stack">
+        <StyledSkills id="Skills">
             <Container>
-                <SectionTitle>My Tech Stack</SectionTitle>
-                <DescriptionTitle> Technologies I’ve been working with recently</DescriptionTitle>
-                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
-                    <Icon iconId={"html"}/>
-                    <Icon iconId={"css"}/>
-                    <Icon iconId={"js"}/>
-                    <Icon iconId={"react"}/>
-                    <Icon iconId={"redux"}/>
-                    <Icon iconId={"bootstrap"}/>
+                <SectionTitle color={"#e84949"}>Skills</SectionTitle>
+
+                <FlexWrapper justify={"space-between"}>
+                    <IconsSide>
+                        <Icon iconId={"html"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
+                        <Icon iconId={"css"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
+                        <Icon iconId={"js"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
+
+                        <Icon iconId={"react"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
+                        <Icon iconId={"redux"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
+                        <Icon iconId={"bootstrap"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
+
+                        <Icon iconId={"tailwind"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
+                        <Icon iconId={"sass"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
+                        <Icon iconId={"git"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
+
+                        <Icon iconId={"cib_greensock"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
+                        <Icon iconId={"vscode"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
+                        <Icon iconId={"github2"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
+                    </IconsSide>
+                    <RightSide>
+                        <Icon iconId={"skills"} width={"511"} height={"414"} viewBox={"0 0 511 414"}/>
+                    </RightSide>
                 </FlexWrapper>
-                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
-                    <Icon iconId={"tailwind"}/>
-                    <Icon iconId={"sass"}/>
-                    <Icon iconId={"git"}/>
-                    <Icon iconId={"cib_greensock"}/>
-                    <Icon iconId={"vscode"}/>
-                    <Icon iconId={"github2"}/>
-                </FlexWrapper>
+
             </Container>
         </StyledSkills>
     );
 };
 
 const StyledSkills = styled.section`
-    min-height: 90vh;
-    margin-top: 200px;
+    height: 473px;
+    margin-top: 50px;
 `
 
-const DescriptionTitle = styled.article`
-    font-family: "Poppins";
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 26px;
-    letter-spacing: 0px;
-    color: ${Theme.colors.primaryLightModeText};
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 200px;
+
+const IconsSide = styled.div`
+    max-width: 500px;
+    padding: 60px 0 0 0;
+    border: 1px solid green;
+`
+
+const RightSide = styled.div`
+    border: 1px solid orange;
 `

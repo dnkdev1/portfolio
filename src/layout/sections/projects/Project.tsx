@@ -15,7 +15,7 @@ export const Project = (props: WorkPropsType) => {
                 <StyledDiv>
                     <Description>{props.text}</Description>
                 </StyledDiv>
-                <Button type={"submit"}>Learn More</Button>
+                <Button type={"submit"} color={"rgba(52, 61, 104, 0.08)"} width={"131px"} height={"42px"}>Learn More</Button>
 
             </FlexWrapper>
 
@@ -26,10 +26,10 @@ export const Project = (props: WorkPropsType) => {
 
 const StyledProject = styled.div`
     box-shadow: 5px 5px 5px grey, -5px -5px 5px lightgrey;
-    max-width: 375px;
+    max-width: 381px;
     width: 100%;
-    height: 431px;
-    margin-bottom: 50px;
+    height: 434px;
+    margin: 0 0 0 0;
     border-radius: 20px;
 `
 

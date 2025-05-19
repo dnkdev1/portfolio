@@ -4,6 +4,7 @@ function GetUrl(sectionId: string): string {
     return "#" + sectionId
 }
 
+
 export const Menu = (props: { menuItems: Array<string> }) => {
     return (
         <StyledMenu>

@@ -5,14 +5,14 @@ import projectImage1 from "../../../assets/images/projects/projectImg1.png"
 import projectImage2 from "../../../assets/images/projects/projectImg2.png"
 import projectImage3 from "../../../assets/images/projects/projectImg3.png"
 import {Container} from "../../../components/Container.ts";
-
+import {SectionTitle} from "../../../components/SectionTitle";
 
 export const Projects = () => {
     return (
         <StyledProjects id="Projects">
             <Container>
-                <StyledTitle>Projects</StyledTitle>
-
+                <SectionTitle color={"rgba(255, 255, 255, 0.87)"}>Projects</SectionTitle>
+                <DescriptionTitle color={"rgba(255, 255, 255, 0.87)"}>A select number of projects</DescriptionTitle>
                 <FlexWrapper justify={"space-between"}>
                     <Project
                         src={projectImage1}
@@ -35,18 +35,15 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-    min-height: 100vh;
+    height: 591px;
     background-color: #343D68;
 `
 
-const StyledTitle = styled.h2`
-    font-family: "Be Vietnam";
+const DescriptionTitle = styled.h2`
+    font-family: "Be Vietnam", sans-serif;
     font-weight: 500;
-    font-size: 48px;
-    line-height: 26px;
-    letter-spacing: 0px;
-    color: #FFFFFF;
+    font-size: 20px;
+    color: ${props => props.color || "black"};
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 30px;
 `
