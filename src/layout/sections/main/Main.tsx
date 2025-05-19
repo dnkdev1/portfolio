@@ -61,7 +61,7 @@ const StyledDiv = styled.div`
         display: inline-block;
         width: 42px;
         height: 102px;
-        background-image: url("plus.svg");
+        background-image: url(./plus.svg);
         background-repeat: no-repeat;
         position: absolute;
         top: -40px;
