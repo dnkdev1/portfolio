@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import zigzag from "../../../assets/images/zigzag.svg"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container.ts";
 import myphoto from '../../../assets/images/myphoto.jpg'
@@ -16,18 +15,18 @@ export const Main = () => {
                         <SmallText>I’m John Doe, a developer dedicated to making the world a</SmallText>
                         <SmallText>better place one line of code at a time.</SmallText>
                         <FlexWrapper align={"start"}>
-                        <Button type={"submit"}>Hire me</Button>
+                            <Button type={"submit"}>Hire me</Button>
                         </FlexWrapper>
                     </div>
 
 
                     <StyledDiv>
+                        <Group1/>
                         <StyledImg id={"myphoto"} src={myphoto} alt=""/>
-
+                        <Group2/>
                     </StyledDiv>
 
                 </FlexWrapper>
-
 
 
             </Container>
@@ -37,8 +36,9 @@ export const Main = () => {
 
 const StyledMain = styled.section`
     height: 495px;
-    margin-top: 100px;
+    margin-top: 150px;
 `
+
 
 const StyledDiv = styled.div`
     border: 1px solid black;
@@ -49,15 +49,72 @@ const StyledDiv = styled.div`
         display: inline-block;
         width: 42px;
         height: 102px;
-        /*background-image: url(${zigzag});*/
-        /*background-image: url(./../../assets/images/zigzag.svg);*/
         background-image: url(./zigzag.svg);
         background-repeat: no-repeat;
         position: absolute;
-        top: 0;
-        left: -40px;
+        top: -20px;
+        left: -50px;
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 42px;
+        height: 102px;
+        background-image: url("plus.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -40px;
+        right: 100px;
     }
 `
+
+const Group1 = styled.span`
+    display: inline-block;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 42px;
+        height: 102px;
+        background-image: url(./cube.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 440px;
+        left: 400px;
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 42px;
+        height: 102px;
+        background-image: url(./ellipse.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+    }
+`
+
+const Group2 = styled.span`
+    display: inline-block;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 120px;
+        height: 76px;
+        background-image: url(./circles.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -20px;
+        right: -30px;
+    }
+`
+
 
 const StyledImg = styled.img`
     width: 410px;

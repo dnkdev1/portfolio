@@ -18,7 +18,7 @@ export const Contacts = () => {
 
                 <FlexWrapper justify={"space-between"}>
                     <LeftSide>
-                        <Icon iconId={"man2"} width={"563px"} height={"412px"} viewBox={"0 0 563 412"}/>
+                        <Icon iconId={"manA"} width={"563"} height={"412"} viewBox={"0 0 563 412"}/>
                     </LeftSide>
 
                     <RightSide>
@@ -55,10 +55,11 @@ const StyledForm = styled.form`
 `
 
 const LeftSide = styled.div`
-
+border: 1px solid red;
+    /*background-image: url(./man2.svg)*/
 `
 
 const RightSide = styled.div`
-
+border: 1px solid blue;
 `
 
