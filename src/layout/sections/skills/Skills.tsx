@@ -10,7 +10,7 @@ export const Skills = () => {
             <Container>
                 <SectionTitle color={"#e84949"}>Skills</SectionTitle>
 
-                <FlexWrapper justify={"space-between"}>
+                <FlexWrapper justify={"space-between"} wrap={"wrap-reverse"}>
                     <IconsSide>
                         <Icon iconId={"html"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
                         <Icon iconId={"css"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
@@ -39,7 +39,7 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-    height: 473px;
+    min-height: 473px;
     margin-top: 50px;
 `
 

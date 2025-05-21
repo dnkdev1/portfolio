@@ -1,15 +1,16 @@
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container.ts";
-import myphoto from '../../../assets/images/myphoto.jpg'
+/*import myphoto from '../../../assets/images/myphoto.jpg';*/
 import {Button} from "../../../components/Button.tsx";
+import photo3 from "../../../assets/images/photo3.png";
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-around"}>
-                    <div>
+                <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap-reverse"}>
+                    <LeftSide>
                         <Text>Hi 👋, I’m a</Text>
                         <Text>Software Developer</Text>
                         <SmallText>I’m John Doe, a developer dedicated to making the world a</SmallText>
@@ -17,31 +18,31 @@ export const Main = () => {
                         <FlexWrapper align={"start"}>
                             <Button type={"submit"}>Hire me</Button>
                         </FlexWrapper>
-                    </div>
-
-
-                    <StyledDiv>
+                    </LeftSide>
+                    <RightSide>
                         <Group1/>
-                        <StyledImg id={"myphoto"} src={myphoto} alt=""/>
+                        {/*<StyledImg id={"myphoto"} src={myphoto} alt=""/>*/}
+                        <StyledImg id={"photo3"} src={photo3} alt=""/>
                         <Group2/>
-                    </StyledDiv>
-
+                    </RightSide>
                 </FlexWrapper>
-
-
             </Container>
         </StyledMain>
     );
 };
 
 const StyledMain = styled.section`
-    height: 495px;
+    min-height: 495px;
     margin-top: 150px;
+    border: 1px solid green;
+`
+const LeftSide = styled.div`
+    border: 1px solid darkorange;
 `
 
 
-const StyledDiv = styled.div`
-    border: 1px solid black;
+const RightSide = styled.div`
+    border: 1px solid darkviolet;
     position: relative;
 
     &::before {
@@ -52,7 +53,7 @@ const StyledDiv = styled.div`
         background-image: url(./zigzag.svg);
         background-repeat: no-repeat;
         position: absolute;
-        top: -20px;
+        top: 30px;
         left: -50px;
     }
 
@@ -64,8 +65,8 @@ const StyledDiv = styled.div`
         background-image: url(./plus.svg);
         background-repeat: no-repeat;
         position: absolute;
-        top: -40px;
-        right: 100px;
+        top: 0px;
+        left: 100px;
     }
 `
 
@@ -81,8 +82,8 @@ const Group1 = styled.span`
         background-image: url(./cube.svg);
         background-repeat: no-repeat;
         position: absolute;
-        bottom: 440px;
-        left: 400px;
+        bottom: 340px;
+        left: 322px;
     }
 
     &::after {
@@ -117,9 +118,10 @@ const Group2 = styled.span`
 
 
 const StyledImg = styled.img`
-    width: 410px;
-    height: 495px;
+    width: 343.85px;
+    height: 389.11px;
     object-fit: cover;
+    margin: 50px 0 0 0;
 `
 
 const Text = styled.article`

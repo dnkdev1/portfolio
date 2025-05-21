@@ -13,7 +13,7 @@ export const Projects = () => {
             <Container>
                 <SectionTitle color={"rgba(255, 255, 255, 0.87)"}>Projects</SectionTitle>
                 <DescriptionTitle color={"rgba(255, 255, 255, 0.87)"}>A select number of projects</DescriptionTitle>
-                <FlexWrapper justify={"space-between"}>
+                <FlexWrapper justify={"space-between"} wrap={"wrap"}>
                     <Project
                         src={projectImage1}
                         text={"Made a social media manager template using HTML 5, CSS and JS."}
@@ -35,7 +35,7 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-    height: 591px;
+    min-height: 591px;
     background-color: #343D68;
 `
 

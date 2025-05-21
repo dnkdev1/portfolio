@@ -16,7 +16,7 @@ export const Contacts = () => {
                     <SectionTitle color={"#e84949"}>Contact me</SectionTitle>
                 </FlexWrapper>
 
-                <FlexWrapper justify={"space-between"}>
+                <FlexWrapper justify={"space-between"} wrap={"wrap"}>
                     <LeftSide>
                         <Icon iconId={"manA"} width={"563"} height={"412"} viewBox={"0 0 563 412"}/>
                     </LeftSide>
@@ -40,7 +40,7 @@ export const Contacts = () => {
 
 const StyledContacts = styled.section`
     /*width: 1241px;*/
-    height: 412px;
+    min-height: 412px;
     margin-top: 74px;
 `
 

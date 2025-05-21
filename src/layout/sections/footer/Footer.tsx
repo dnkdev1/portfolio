@@ -3,7 +3,6 @@ import {Menu} from '../../../components/menu/Menu';
 import {Icon} from '../../../components/icon/Icon';
 import {FlexWrapper} from '../../../components/FlexWrapper';
 import {Container} from "../../../components/Container";
-import {Link} from "../../../components/Link";
 import {waveForFooter} from "../../../components/WaveForFooter.ts";
 
 const items = ["Home", "About", "Technologies", "Projects", "Contact"]
@@ -16,18 +15,18 @@ export const Footer = () => {
                     <div>
                         <Text>My social media links:</Text>
                         <FlexWrapper gap={'20px'}>
-                            <Icon width={"30px"} height={"30px"} viewBox={"0 0 30px 30px"} iconId={"whatsapp"}/>
-                            <Icon width={"30px"} height={"30px"} viewBox={"0 0 30px 30px"} iconId={"twitter"}/>
-                            <Icon width={"30px"} height={"30px"} viewBox={"0 0 30px 30px"} iconId={"linkedin"}/>
+                            <Icon width={"30px"} height={"30px"} viewBox={"0 0 30 30"} iconId={"whatsapp"}/>
+                            <Icon width={"30px"} height={"30px"} viewBox={"0 0 30 30"} iconId={"twitter"}/>
+                            <Icon width={"30px"} height={"30px"} viewBox={"0 0 30 30"} iconId={"linkedin"}/>
                         </FlexWrapper>
                     </div>
                     <div>
                         <Text>More projects I’ve worked on</Text>
                         <FlexWrapper gap={'20px'}>
-                            <Link href="https://github.com/dnkdev1">
-                                <Icon width={"30px"} height={"30px"} viewBox={"0 0 30px 30px"}
+                            <a href="https://github.com/dnkdev1">
+                                <Icon width={"30px"} height={"30px"} viewBox={"0 0 30 30"}
                                       iconId={"github2NightMode"}/>
-                            </Link>
+                            </a>
                             <Text>@dnkdev1 on github</Text>
                         </FlexWrapper>
                     </div>

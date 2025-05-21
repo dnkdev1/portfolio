@@ -1,9 +1,8 @@
 
 
-export const Theme = {
+export const theme = {
     colors: {
         lightModeBg: "#FFFFFF",
-        DarkModeBg: "#191919",
         accent: "#D7FFE0",
         primaryLightModeText: "#666666",
         secondaryLightModeText: "#42446E",
@@ -12,5 +11,11 @@ export const Theme = {
         secondaryDarkModeText: "#CCCCCC",
         contactText: "#13B0F5"
 
+    },
+
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)"
     }
+
 }
