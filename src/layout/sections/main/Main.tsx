@@ -4,6 +4,7 @@ import {Container} from "../../../components/Container.ts";
 /*import myphoto from '../../../assets/images/myphoto.jpg';*/
 import {Button} from "../../../components/Button.tsx";
 import photo3 from "../../../assets/images/photo3.png";
+import {theme} from "../../../styles/Theme.ts";
 
 export const Main = () => {
     return (
@@ -39,11 +40,17 @@ const StyledMain = styled.section`
 const LeftSide = styled.div`
     border: 1px solid darkorange;
 `
-
-
 const RightSide = styled.div`
     border: 1px solid darkviolet;
     position: relative;
+    
+    @media screen and (max-width: 896px) {
+        margin-bottom: 100px;       
+    }
+    
+    @media ${theme.media.mobile} {
+        margin-bottom: 100px;       
+    }
 
     &::before {
         content: "";
@@ -55,8 +62,11 @@ const RightSide = styled.div`
         position: absolute;
         top: 30px;
         left: -50px;
+        
+        @media ${theme.media.mobile} {
+            background-image: url(./zigzagsSmall.svg);
+        }
     }
-
     &::after {
         content: "";
         display: inline-block;
@@ -67,9 +77,12 @@ const RightSide = styled.div`
         position: absolute;
         top: 0px;
         left: 100px;
+
+        @media ${theme.media.mobile} {
+            background-image: url(./plusSmall.svg);
+        }
     }
 `
-
 const Group1 = styled.span`
     display: inline-block;
     position: relative;
@@ -84,8 +97,13 @@ const Group1 = styled.span`
         position: absolute;
         bottom: 340px;
         left: 322px;
+        
+        @media ${theme.media.mobile} {
+            background-image: url(./cubeSmall.svg);
+            bottom: 190px;
+            left: 190px;       
+        }
     }
-
     &::after {
         content: "";
         display: inline-block;
@@ -96,9 +114,12 @@ const Group1 = styled.span`
         position: absolute;
         top: 20px;
         right: 0px;
+
+        @media ${theme.media.mobile} {
+            background-image: url(./ellipseSmall.svg);
+        }
     }
 `
-
 const Group2 = styled.span`
     display: inline-block;
     position: relative;
@@ -113,15 +134,22 @@ const Group2 = styled.span`
         position: absolute;
         top: -20px;
         right: -30px;
+
+        @media ${theme.media.mobile} {
+            background-image: url(./circlesSmall.svg);
+        }
     }
 `
-
-
 const StyledImg = styled.img`
     width: 343.85px;
     height: 389.11px;
     object-fit: cover;
     margin: 50px 0 0 0;
+    
+    @media ${theme.media.mobile} {
+        width: 204px;
+        height: 238px;
+    }
 `
 
 const Text = styled.article`
@@ -134,7 +162,6 @@ const Text = styled.article`
     color: #343d68;
     text-align: left;
 `
-
 const SmallText = styled.p`
     font-family: "Be Vietnam", sans-serif;
     font-weight: 400;
