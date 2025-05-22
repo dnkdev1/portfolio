@@ -4,22 +4,23 @@ import {Icon} from "./icon/Icon.tsx";
 type ButtonWithIconType = {
     iconId: string
     title: string
-    width?: string
-    height?: string
     iconWidth?: string
     iconHeight?: string
     viewBox?: string
+    buttonWidth?: string
+    buttonHeight?: string
     color?: string
     boxShadow?: string
     borderStyle?: string
+    borderRadius?: string
     padding?: string
 }
 
-export const ButtonWithIcon = ({iconId, title, width, height, iconWidth, iconHeight, viewBox, color, boxShadow, borderStyle, padding}: ButtonWithIconType) => {
+export const ButtonWithIcon = ({iconId, title, iconWidth, iconHeight, viewBox, buttonWidth, buttonHeight, color, boxShadow, borderStyle, borderRadius, padding}: ButtonWithIconType) => {
     return(
-        <Button width={width} height={height} color={color} boxShadow={boxShadow} borderStyle={borderStyle} padding={padding}>
-            <Icon iconId={iconId} width={iconWidth} height={iconHeight} viewBox={viewBox}/>
+        <Button width={buttonWidth} height={buttonHeight} color={color} boxShadow={boxShadow} borderStyle={borderStyle} border-radius={borderRadius} padding={padding}>
             {title}
+            <Icon iconId={iconId} width={iconWidth} height={iconHeight} viewBox={viewBox}/>
         </Button>
     )
 }

@@ -14,7 +14,7 @@ const StyledContactsLeftSideMobile = styled.div`
     display:none;
     
     @media ${theme.media.mobile} {
-        display: block;
+        display: flex;
         border: 1px solid red;
         min-width: 250px;
     }

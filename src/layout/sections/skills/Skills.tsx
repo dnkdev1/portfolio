@@ -11,7 +11,7 @@ export const Skills = () => {
         <StyledSkills id="Skills">
             <Container>
                 <SectionTitle color={"#e84949"}>Skills</SectionTitle>
-                <FlexWrapper justify={"space-between"} wrap={"wrap-reverse"}>
+                <FlexWrapper justify={"space-around"} align={"center"} wrap={"wrap-reverse"}>
                     <SkillsLeftSide/>
                     <SkillsRightSide/>
                     <SkillsRightSideMobile/>

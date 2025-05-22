@@ -13,7 +13,7 @@ export const Contacts = () => {
                 <FlexWrapper align={"center"} justify={"space-around"}>
                     <SectionTitle color={"#e84949"}>Contact me</SectionTitle>
                 </FlexWrapper>
-                <FlexWrapper justify={"space-between"} wrap={"wrap"}>
+                <FlexWrapper justify={"space-around"} align={"center"} wrap={"wrap"}>
                     <ContactsLeftSide/>
                     <ContactsLeftSideMobile/>
                     <ContactsForm/>

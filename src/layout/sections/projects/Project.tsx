@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Button} from "../../../components/Button.tsx";
+import {theme} from "../../../styles/Theme.ts";
+import {ButtonWithIcon} from "../../../components/ButtonWithIcon.tsx";
 
 type WorkPropsType = {
     src: string
@@ -15,8 +16,14 @@ export const Project = (props: WorkPropsType) => {
                 <StyledDiv>
                     <Description>{props.text}</Description>
                 </StyledDiv>
-                <Button type={"submit"} color={"rgba(52, 61, 104, 0.08)"} width={"131px"} height={"42px"}>Learn More</Button>
 
+                <ButtonWithIcon
+                    iconId={"arrow"} title={"Learn More"}
+                    iconWidth={"21px"} iconHeight={"20px"}
+                    viewBox={"0 0 24 24"} buttonWidth={"131px"}
+                    buttonHeight={"42px"} color={"rgba(52, 61, 104, 0.08)"}
+                    borderStyle={"solid"} borderRadius={"4px"}
+                />
             </FlexWrapper>
 
         </StyledProject>
@@ -25,12 +32,12 @@ export const Project = (props: WorkPropsType) => {
 
 
 const StyledProject = styled.div`
-    box-shadow: 5px 5px 5px grey, -5px -5px 5px lightgrey;
+    border: lightskyblue 1px solid;
     max-width: 381px;
     width: 100%;
     height: 434px;
-    margin: 0 0 0 0;
-    border-radius: 20px;
+    background-color: ${theme.colors.thirdColor};
+    padding: 0px 0px 12px 0px;
 `
 
 const Image = styled.img`
@@ -41,11 +48,9 @@ const Image = styled.img`
 
 const Description = styled.p`
     font-family: "Be Vietnam";
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 29px;
-    letter-spacing: 0px;
-    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.87);
     text-align: center;
     padding: 20px;
 `

@@ -5,6 +5,7 @@ export const theme = {
         firstColor: "#FFFFFF",
         accentColor: "#e84949",
         secondColor: "#343d68",
+        thirdColor: "#262c4d",
 
         primaryLightModeText: "#666666",
         secondaryLightModeText: "#42446E",
