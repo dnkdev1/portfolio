@@ -16,7 +16,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    background-color: ${theme.colors.lightModeBg};
+    background-color: ${theme.colors.firstColor};
     padding-top: 0;
     position: fixed;
     top: 0;

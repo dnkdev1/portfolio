@@ -2,8 +2,10 @@
 
 export const theme = {
     colors: {
-        lightModeBg: "#FFFFFF",
-        accent: "#D7FFE0",
+        firstColor: "#FFFFFF",
+        accentColor: "#e84949",
+        secondColor: "#343d68",
+
         primaryLightModeText: "#666666",
         secondaryLightModeText: "#42446E",
         thirdLightModeText: "#1E0E62",

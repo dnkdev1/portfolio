@@ -6,6 +6,7 @@ import projectImage2 from "../../../assets/images/projects/projectImg2.png"
 import projectImage3 from "../../../assets/images/projects/projectImg3.png"
 import {Container} from "../../../components/Container.ts";
 import {SectionTitle} from "../../../components/SectionTitle";
+import {theme} from "../../../styles/Theme.ts";
 
 export const Projects = () => {
     return (
@@ -36,7 +37,7 @@ export const Projects = () => {
 
 const StyledProjects = styled.section`
     min-height: 591px;
-    background-color: #343D68;
+    background-color: ${theme.colors.secondColor};
 `
 
 const DescriptionTitle = styled.h2`

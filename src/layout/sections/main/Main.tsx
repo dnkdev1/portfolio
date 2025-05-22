@@ -159,7 +159,7 @@ const Text = styled.article`
     line-height: 1.176;
     letter-spacing: 0.01em;
     text-transform: capitalize;
-    color: #343d68;
+    color: ${theme.colors.secondColor};
     text-align: left;
 `
 const SmallText = styled.p`

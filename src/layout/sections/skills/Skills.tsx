@@ -3,6 +3,7 @@ import {Icon} from "../../../components/icon/Icon";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Container} from "../../../components/Container";
+import {theme} from "../../../styles/Theme.ts";
 
 export const Skills = () => {
     return (
@@ -29,6 +30,7 @@ export const Skills = () => {
                         <Icon iconId={"github2"} width={"80"} height={"80"} viewBox={"0 0 120 120"}/>
                     </IconsSide>
                     <RightSide>
+
                         <Icon iconId={"skills"} width={"511"} height={"414"} viewBox={"0 0 511 414"}/>
                     </RightSide>
                 </FlexWrapper>
@@ -42,8 +44,6 @@ const StyledSkills = styled.section`
     min-height: 473px;
     margin-top: 50px;
 `
-
-
 const IconsSide = styled.div`
     max-width: 500px;
     padding: 60px 0 0 0;
@@ -52,4 +52,10 @@ const IconsSide = styled.div`
 
 const RightSide = styled.div`
     border: 1px solid orange;
+    
+
+    /*@media ${theme.media.mobile} {
+        background-repeat: no-repeat;
+        background-image: url(./skillsSmall.svg);
+    }*/
 `
