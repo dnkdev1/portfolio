@@ -19,7 +19,7 @@ export const ContactsForm = () => {
 
 const StyledContactsForm = styled.form`
     border: 1px solid red;
-    max-width: 500px;
+    max-width: 613px;
     width: 613px;
     height: 347px;
     display: flex;

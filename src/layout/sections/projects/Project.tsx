@@ -35,15 +35,25 @@ const StyledProject = styled.div`
     border: lightskyblue 1px solid;
     max-width: 381px;
     width: 100%;
-    height: 434px;
+    height: 431px;
     background-color: ${theme.colors.thirdColor};
     padding: 0px 0px 12px 0px;
+    
+    @media ${theme.media.mobile} {
+        width: 265px;
+        height: 327px;
+    }
 `
 
 const Image = styled.img`
     width: 375px;
     height: 260px;
     object-fit: cover;
+    
+    @media ${theme.media.mobile} {
+        width: 265px;
+        height: 165px;
+    }
 `
 
 const Description = styled.p`
