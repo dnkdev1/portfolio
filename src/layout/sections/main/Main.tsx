@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container.ts";
-/*import myphoto from '../../../assets/images/myphoto.jpg';*/
+/*import myPhotoForMain from '../../../assets/images/main/myPhotoForMain.jpg';*/
 import {Button} from "../../../components/Button.tsx";
-import photo3 from "../../../assets/images/photo3.png";
+import originalPhotoFromFigma from "../../../assets/images/main/originalPhotoForMain.png";
 import {theme} from "../../../styles/Theme.ts";
 
 export const Main = () => {
@@ -22,8 +22,8 @@ export const Main = () => {
                     </LeftSide>
                     <RightSide>
                         <Group1/>
-                        {/*<StyledImg id={"myphoto"} src={myphoto} alt=""/>*/}
-                        <StyledImg id={"photo3"} src={photo3} alt=""/>
+                        {/*<StyledImg id={"myPhotoForMain"} src={myPhotoForMain} alt=""/>*/}
+                        <StyledImg id={"photo3"} src={originalPhotoFromFigma} alt=""/>
                         <Group2/>
                     </RightSide>
                 </FlexWrapper>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {TextField} from "../../../../components/text-field/TextField.tsx";
 import {TextArea} from "../../../../components/text-area/TextArea.tsx";
 import {Button} from "../../../../components/Button.tsx";
-import paperplane from "../../../../assets/images/paperplane.png";
+import paperplane from "../../../../assets/images/contacts/paperplane.png";
 
 export const ContactsForm = () => {
     return (

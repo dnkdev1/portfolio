@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
-import Logo2 from "../../../../assets/images/logo/Logo2.png";
+import logo from "../../../../assets/images/logo/Logo.png";
 import {Link} from "../../../../components/Link.tsx";
 import {theme} from "../../../../styles/Theme.ts";
 
@@ -8,7 +8,7 @@ export const HeaderMenu = () => {
     return (
         <StyledHeaderMenu>
             <FlexWrapper justify={"space-between"} align={"center"}>
-                <StyledImg id={"Logo2"} src={Logo2} alt=""/>
+                <StyledImg id={"Logo2"} src={logo} alt=""/>
                 <FlexWrapper gap={"40px"}>
                     <Link href={"#Skills"} text={"Skills"} withLeftIcon={false}></Link>
                     <Link href={"#Projects"} text={"Projects"} withLeftIcon={true}></Link>
@@ -33,6 +33,6 @@ const StyledImg = styled.img`
     width: 90px;
     height: 35px;
     object-fit: cover;
-    background-image: ${Logo2};
+    background-image: ${logo};
 `
 
