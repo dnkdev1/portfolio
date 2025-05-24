@@ -18,8 +18,15 @@ export const Project = (props: WorkPropsType) => {
                 </StyledDiv>
 
                 <ButtonWithIcon
-                    iconId={"arrow"} title={"Learn More"} iconWidth={"21px"} iconHeight={"20px"}
-                    viewBox={"0 0 24 24"} buttonWidth={"131px"} buttonHeight={"42px"}
+                    iconId={"arrow"}
+                    title={"Learn More"}
+                    iconWidth={"21px"}
+                    iconHeight={"20px"}
+                    viewBox={"0 0 24 24"}
+                    fillIcon={theme.colors.thirdColor}
+
+                    buttonWidth={"131px"}
+                    buttonHeight={"42px"}
 
                     backgroundColor={"rgba(52, 61, 104, 0.08)"}
                     textColor={"#fff"}
