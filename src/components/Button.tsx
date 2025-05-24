@@ -49,6 +49,9 @@ export const Button = styled.button<ButtonType>`
         border-color: ${props => props.borderColorHover || "#E84949"};
         border-width: ${props => props.borderWidth || "2px"};
         
+        svg {
+            stroke: #262c4d;
+        }
     }
 `
 
