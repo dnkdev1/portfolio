@@ -1,4 +1,4 @@
-export const waveForFooter = encodeURIComponent(`<svg width="1440" height="444" viewBox="0 0 1440px 444px" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const footersWave = encodeURIComponent(`<svg width="1440" height="444" viewBox="0 0 1440px 444px" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="mask0_89247_334" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="444">
 <rect width="1440" height="444" fill="#D9D9D9"/>
 </mask>

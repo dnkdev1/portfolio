@@ -10,7 +10,7 @@ type WorkPropsType = {
 
 export const Project = (props: WorkPropsType) => {
     return (
-        <StyledProject id="Projects">
+        <StyledProject>
             <Image src={props.src} alt=""/>
             <FlexWrapper justify={"space-between"} direction={"column"} wrap={"wrap"} align={"center"}>
                 <StyledDiv>
@@ -18,11 +18,19 @@ export const Project = (props: WorkPropsType) => {
                 </StyledDiv>
 
                 <ButtonWithIcon
-                    iconId={"arrow"} title={"Learn More"}
-                    iconWidth={"21px"} iconHeight={"20px"}
-                    viewBox={"0 0 24 24"} buttonWidth={"131px"}
-                    buttonHeight={"42px"} color={"rgba(52, 61, 104, 0.08)"}
-                    borderStyle={"solid"} borderRadius={"4px"}
+                    iconId={"arrow"} title={"Learn More"} iconWidth={"21px"} iconHeight={"20px"}
+                    viewBox={"0 0 24 24"} buttonWidth={"131px"} buttonHeight={"42px"}
+
+                    backgroundColor={"rgba(52, 61, 104, 0.08)"}
+                    textColor={"#fff"}
+                    textColorHover={theme.colors.thirdColor}
+
+                    borderWidth={"2px"}
+                    borderColor={"#fff"}
+                    borderColorHover={"#343d68"}
+
+                    borderStyle={"solid"}
+                    borderRadius={"4px"}
                 />
             </FlexWrapper>
 
@@ -30,32 +38,59 @@ export const Project = (props: WorkPropsType) => {
     );
 };
 
-
 const StyledProject = styled.div`
     border: lightskyblue 1px solid;
-    max-width: 381px;
-    width: 100%;
-    height: 431px;
+    max-width: 264px;
+    width: 200px;
+    height: 430px;
     background-color: ${theme.colors.thirdColor};
     padding: 0px 0px 12px 0px;
+    flex-grow: 1;
     
     @media ${theme.media.mobile} {
-        width: 265px;
+        max-width: 264px;
         height: 327px;
     }
 `
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const Image = styled.img`
-    width: 375px;
+    width: 100%;
     height: 260px;
     object-fit: cover;
     
     @media ${theme.media.mobile} {
-        width: 265px;
-        height: 165px;
+        height: 164px;
     }
 `
-
 const Description = styled.p`
     font-family: "Be Vietnam";
     font-weight: 400;

@@ -1,5 +1,6 @@
 .text-area{
     position: relative;
+    height: 158px
 }
 
 .text-area > label {

@@ -5,6 +5,7 @@ import {SectionTitle} from "../../../components/SectionTitle.tsx";
 import {ContactsForm} from "./contactsForm/ContactsForm.tsx";
 import {ContactsLeftSide} from "./contactsLeftSide/ContactsLeftSide.tsx";
 import {ContactsLeftSideMobile} from "./contactsLeftSideMobile/ContactsLeftSideMobile.tsx";
+import {theme} from "../../../styles/Theme.ts";
 
 export const Contacts = () => {
     return (
@@ -13,11 +14,15 @@ export const Contacts = () => {
                 <FlexWrapper align={"center"} justify={"space-around"}>
                     <SectionTitle color={"#e84949"}>Contact me</SectionTitle>
                 </FlexWrapper>
-                <FlexWrapper justify={"space-around"} align={"center"} wrap={"wrap"}>
+
+                <ContactsWrapper>
+
                     <ContactsLeftSide/>
                     <ContactsLeftSideMobile/>
                     <ContactsForm/>
-                </FlexWrapper>
+
+                </ContactsWrapper>
+
             </Container>
         </StyledContacts>
     );
@@ -26,5 +31,16 @@ export const Contacts = () => {
 
 const StyledContacts = styled.section`
     min-height: 412px;
-    margin-top: 74px;
+    padding-bottom: 74px;
+`
+
+const ContactsWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    
+    @media ${theme.media.large} {
+        flex-direction: column;
+        align-items: center;
+    }
 `

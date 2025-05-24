@@ -1,5 +1,7 @@
 .text-field {
     position: relative;
+    /*width: 613px;
+    height: 53px;*/
 }
 
 .text-field > label {

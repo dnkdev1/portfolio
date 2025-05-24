@@ -20,7 +20,6 @@ export const MainLeftSide = () => {
 const StyledMainLeftSide = styled.div`
     border: 1px solid darkorange;
 `
-
 const Text = styled.article`
     font-family: "Be Vietnam", sans-serif;
     font-weight: 600;
