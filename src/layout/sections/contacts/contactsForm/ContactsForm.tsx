@@ -11,12 +11,12 @@ export const ContactsForm = () => {
         <StyledContactsForm>
             <TextField id="email" type={"email"} labelText={"Enter email address"}/>
             <TextArea id="message" labelText={"Enter message"}></TextArea>
-            <FlexWrapper align={"center"}>
+            {/*<FlexWrapper align={"center"}>*/}
             <Button type={"submit"} textColor={"#fffdfd"} borderColorHover={"#343d68"} textColorHover={"#343d68"} backgroundColor={"#343d68"} width={"213px"} height={"50px"}>
                 Send Message
                 <img src={paperplane} alt=""/>
             </Button>
-            </FlexWrapper>
+            {/*</FlexWrapper>*/}
         </StyledContactsForm>
     );
 }
@@ -25,6 +25,8 @@ const StyledContactsForm = styled.form`
     display: flex;
     flex-direction: column;
     
+    
+    /*gap: 50px;*/
     border: 1px solid red;
     width: 350px;
     height: 340px;
@@ -38,5 +40,11 @@ const StyledContactsForm = styled.form`
     @media ${theme.media.mobile}{
         width: 100%;
     }
+    
+    
+    button{
+        align-self: center;
+    }
+    
 `
 
