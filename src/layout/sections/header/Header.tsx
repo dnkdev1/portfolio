@@ -8,8 +8,8 @@ export const Header = () => {
     return (
         <StyledHeader id="Home">
             <Container>
-                <HeaderMenu/>
-                <MobileMenu/>
+                <HeaderMenu />
+                <MobileMenu />
             </Container>
         </StyledHeader>
     );

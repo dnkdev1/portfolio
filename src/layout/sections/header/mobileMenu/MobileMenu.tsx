@@ -2,21 +2,24 @@ import styled from "styled-components";
 import {theme} from "../../../../styles/Theme.ts";
 import {Link} from "../../../../components/Link.tsx";
 import {css} from "styled-components";
+import {useState} from "react";
 
 export const MobileMenu = () => {
+    const [isOpen, setIsOpen] = useState(false)
+    const onClickHandler = () => {setIsOpen(!isOpen)}
+
     return (
         <StyledMobileMenu>
-            <BurgerButton isOpen={false}>
+            <BurgerButton onClick={onClickHandler} isOpen={isOpen}>
                 <span></span>
             </BurgerButton>
-
-            <MobileMenuPopup isOpen={false}>
-                <ul>
-                    <Link href={"#Skills"} text={"Skills"} withLeftIcon={false}></Link>
-                    <Link href={"#Projects"} text={"Projects"} withLeftIcon={true}></Link>
-                    <Link href={"#Contacts"} text={"Contact me"} withLeftIcon={false}></Link>
-                </ul>
-            </MobileMenuPopup>
+                <MobileMenuPopup isOpen={isOpen}>
+                    <ul>
+                        <Link href={"#Skills"} text={"Skills"} withLeftIcon={false}></Link>
+                        <Link href={"#Projects"} text={"Projects"} withLeftIcon={true}></Link>
+                        <Link href={"#Contacts"} text={"Contact me"} withLeftIcon={false}></Link>
+                    </ul>
+                </MobileMenuPopup>
         </StyledMobileMenu>
     );
 }

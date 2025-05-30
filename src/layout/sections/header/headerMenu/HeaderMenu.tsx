@@ -4,7 +4,9 @@ import logo from "../../../../assets/images/logo/Logo.png";
 import {Link} from "../../../../components/Link.tsx";
 import {theme} from "../../../../styles/Theme.ts";
 
-export const HeaderMenu = () => {
+
+
+export const HeaderMenu = (/*{onClickHandler}: HeaderMenuProps*/) => {
     return (
         <StyledHeaderMenu>
             <FlexWrapper justify={"space-between"} align={"center"}>
