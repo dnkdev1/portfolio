@@ -23,9 +23,9 @@ export const HeaderMenu = (/*{onClickHandler}: HeaderMenuProps*/) => {
 }
 
 const StyledHeaderMenu = styled.nav`
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    /*margin-top: 20px;*/
+    /*margin-left: 100px;
+    margin-right: 100px;*/
 
     @media ${theme.media.tablet} {
         display: none;

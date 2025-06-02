@@ -17,11 +17,11 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     background-color: ${theme.colors.firstColor};
-    padding-top: 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 99999;
     height: 83px;
+    padding: 20px 0 20px 0;
 `

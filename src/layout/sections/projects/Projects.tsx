@@ -29,8 +29,9 @@ export const Projects = () => {
 
 const StyledProjects = styled.section`
     width: 100%;
-    min-height: 590px;
     background-color: ${theme.colors.thirdColor};
+    padding-top: 50px;
+    padding-bottom: 50px;
 `
 const ProjectsWrapper = styled.div`
     flex-wrap: wrap;

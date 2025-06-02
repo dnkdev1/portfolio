@@ -8,7 +8,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap-reverse"}>
+                <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap-reverse"}>
                     <MainLeftSide/>
                     <MainRightSide/>
                 </FlexWrapper>
@@ -19,6 +19,6 @@ export const Main = () => {
 
 const StyledMain = styled.section`
     min-height: 495px;
-    margin-top: 150px;
+    margin-top: 100px;
     border: 1px solid green;
 `

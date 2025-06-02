@@ -31,7 +31,7 @@ const StyledSkillsIcons = styled.div`
     padding: 50px 0 0 0;
     border: 1px solid green;
 
-    @media ${theme.media.mobile} {
+/*    @media ${theme.media.mobile} {
         display: none;
-    }
+    }*/
 `

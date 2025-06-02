@@ -10,5 +10,6 @@ export const SectionTitle = styled.h1<SectionTitleType>`
     font-size: 20px;
     color: ${props => props.color || "black"};
     text-align: center;
-    margin-bottom: 30px;
+    padding-top:30px;
+    padding-bottom: 30px;
 `

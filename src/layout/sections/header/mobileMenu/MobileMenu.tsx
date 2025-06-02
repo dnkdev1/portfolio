@@ -5,6 +5,19 @@ import {css} from "styled-components";
 import {useState} from "react";
 
 export const MobileMenu = () => {
+
+    //как создать в WebStorm создать проект-sandBox с TypeScript и React для того чтобы потренировать себя в частности useState
+    //
+
+    //вот у меня есть твой телеграмм. Принято ли писать в телеграмм преподавателям в межурочное время и отвечают ли они(в частности ты и Виктор Левитин телеграмма которого у меня нет)?
+    //
+
+    //правильно ли я понимаю что в !isOpen ! меняет isOpen: bool на false. Правильно ли я понимаю что !isOpen меняет bool на "неОткрыт"
+    //
+
+    //почему когда мы инициализируем значение переменной isOpen мы не пишем useState(isOpen=false), тоесть не присваеваем значение самой переменной isOpen ?
+    //
+
     const [isOpen, setIsOpen] = useState(false)
     const onClickHandler = () => {setIsOpen(!isOpen)}
 
@@ -13,6 +26,7 @@ export const MobileMenu = () => {
             <BurgerButton onClick={onClickHandler} isOpen={isOpen}>
                 <span></span>
             </BurgerButton>
+            {/*{isOpen &&*/}
                 <MobileMenuPopup isOpen={isOpen}>
                     <ul>
                         <Link href={"#Skills"} text={"Skills"} withLeftIcon={false}></Link>
@@ -20,6 +34,7 @@ export const MobileMenu = () => {
                         <Link href={"#Contacts"} text={"Contact me"} withLeftIcon={false}></Link>
                     </ul>
                 </MobileMenuPopup>
+            {/*}*/}
         </StyledMobileMenu>
     );
 }

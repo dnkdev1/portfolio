@@ -13,7 +13,7 @@ export const SkillsRightSide = () => {
 const StyledSkillsRightSide = styled.div`
     border: 1px solid orange;
 
-    @media ${theme.media.mobile} {
+/*    @media ${theme.media.mobile} {
         display: none;
-    }
+    }*/
 `

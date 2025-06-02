@@ -6,10 +6,10 @@ import {Button} from "../../../../components/Button.tsx";
 export const MainLeftSide = () => {
     return (
         <StyledMainLeftSide>
-            <Text>Hi 👋, I’m a</Text>
+            <StyledSpan>Hi 👋, I’m a</StyledSpan>
             <Text>Software Developer</Text>
-            <SmallText>I’m John Doe, a developer dedicated to making the world a</SmallText>
-            <SmallText>better place one line of code at a time.</SmallText>
+            <SmallText>I’m John Doe, a developer dedicated to making the world a better place one line of code at a time.</SmallText>
+            {/*<SmallText>better place one line of code at a time.</SmallText>*/}
             <FlexWrapper align={"start"}>
                 <Button type={"submit"}>Hire me</Button>
             </FlexWrapper>
@@ -19,8 +19,20 @@ export const MainLeftSide = () => {
 
 const StyledMainLeftSide = styled.div`
     border: 1px solid darkorange;
+    text-align: left;
 `
-const Text = styled.article`
+
+const StyledSpan=styled.span`
+    font-family: "Be Vietnam", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.176;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: ${theme.colors.secondColor};
+`
+
+const Text = styled.h1`
     font-family: "Be Vietnam", sans-serif;
     font-weight: 600;
     font-size: 32px;
@@ -39,4 +51,6 @@ const SmallText = styled.p`
     text-transform: capitalize;
     color: rgba(0, 0, 0, 0.7);
     text-align: left;
+    max-width: 530px;
+    margin: 20px 0 20px 0;
 `
