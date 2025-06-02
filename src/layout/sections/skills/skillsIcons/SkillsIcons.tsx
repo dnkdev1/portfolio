@@ -27,11 +27,28 @@ export const SkillsIcons = () => {
 }
 
 const StyledSkillsIcons = styled.div`
-    max-width: 500px;
-    padding: 50px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 500px;
     border: 1px solid green;
+    justify-items: center;
 
-/*    @media ${theme.media.mobile} {
-        display: none;
-    }*/
+    @media screen and (max-width: 1069px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+     
+    @media ${theme.media.mobile} {
+        
+        justify-content: center;
+        
+        gap: 20px;
+        max-width: 291px;
+        padding: 50px 0 0 0;
+        border: 1px solid green;
+        grid-template-columns: repeat(2, 1fr);
+    }
 `
