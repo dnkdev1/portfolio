@@ -34,14 +34,28 @@ const StyledProjects = styled.section`
     padding-bottom: 50px;
 `
 const ProjectsWrapper = styled.div`
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*flex-wrap: wrap;*/
     gap: 58px;
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
+
+    @media screen and (max-width: 1272px) {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    @media ${theme.media.tablet} {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    
     
     @media ${theme.media.mobile} {
-        gap: 20px;
-        max-width: 360px;
+        
+        
+        
     }
 `
 

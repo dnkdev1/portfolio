@@ -17,7 +17,8 @@ export const MainRightSide = () => {
 const StyledMainRightSide = styled.div`
     border: 1px solid darkviolet;
     position: relative;
-    min-width: 440px;
+    /*min-width: 150px;*/
+    
 
     &::before {
         content: "";
@@ -28,14 +29,14 @@ const StyledMainRightSide = styled.div`
         background-repeat: no-repeat;
         position: absolute;
         bottom: 314px;
-        left: 0;
+        left: -50px;
 
         @media ${theme.media.mobile} {
             background-image: url(./upperGroupSm.svg);
             width: 257px;
             height: 82px;
             bottom: 214px;
-            left: 80px;
+            left: -36px;
         }
     }
     &::after {
@@ -47,14 +48,14 @@ const StyledMainRightSide = styled.div`
         background-repeat: no-repeat;
         position: absolute;
         top: 418px;
-        right: 24px;
+        right: -24px;
 
         @media ${theme.media.mobile} {
             background-image: url(./lowerGroupSm.svg);
             width: 244px;
             height: 60px;
             top: 270px;
-            right: 90px;
+            right: -30px;
         }
     }
 

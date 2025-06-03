@@ -4,7 +4,6 @@ import {TextArea} from "../../../../components/text-area/TextArea.tsx";
 import {Button} from "../../../../components/Button.tsx";
 import paperplane from "../../../../assets/images/contacts/paperplane.png";
 import {theme} from "../../../../styles/Theme.ts";
-import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
 
 export const ContactsForm = () => {
     return (

@@ -47,12 +47,17 @@ export const Project = (props: WorkPropsType) => {
 
 const StyledProject = styled.div`
     border: lightskyblue 1px solid;
-    max-width: 264px;
-    width: 200px;
+    width: 264px;
+    min-width: 200px;
     height: 430px;
     background-color: ${theme.colors.thirdColor};
     padding: 0px 0px 12px 0px;
     flex-grow: 1;
+
+    @media screen and (max-width: 794px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     
     @media ${theme.media.mobile} {
         max-width: 264px;

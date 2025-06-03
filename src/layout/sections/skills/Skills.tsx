@@ -26,12 +26,14 @@ const StyledSkills = styled.section`
 
 const SkillsWrapper = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
     gap: 40px 20px;
+    
 
     @media screen and (max-width: 794px) {
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 `
