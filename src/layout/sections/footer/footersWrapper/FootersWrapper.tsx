@@ -34,8 +34,9 @@ export const FootersWrapper = () => {
 const StyledFootersWrapper = styled.div`
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    gap: 80px 30px;
 `
 
 const LinksWrapper = styled.div`
@@ -60,11 +61,11 @@ const LinksWrapper = styled.div`
 `
 
 const SocialLinks = styled.div`
-    padding: 0 20px 100px 20px;
+    /*padding: 0 20px 0 20px;*/
     border: 1px solid lightpink;
 `
 const GithubFooter = styled.div`
-    padding: 0 20px 100px 20px;
+    /*padding: 0 20px 0 20px;*/
     border: 1px solid lightblue;
 `
 
@@ -76,5 +77,5 @@ const Text = styled.p`
     letter-spacing: 0px;
     color: #FFFFFF;
     /*padding-top:30px;*/
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 `

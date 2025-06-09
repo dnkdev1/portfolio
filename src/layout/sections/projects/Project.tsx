@@ -47,8 +47,8 @@ export const Project = (props: WorkPropsType) => {
 
 const StyledProject = styled.div`
     border: lightskyblue 1px solid;
-    width: 264px;
-    min-width: 200px;
+    width: 100%;
+    /*min-width: 200px;*/
     height: 430px;
     background-color: ${theme.colors.thirdColor};
     padding: 0px 0px 12px 0px;
