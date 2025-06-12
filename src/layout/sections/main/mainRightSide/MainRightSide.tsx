@@ -25,7 +25,7 @@ const StyledMainRightSide = styled.div`
         display: inline-block;
         width: 413px;
         height: 134px;
-        background-image: url(./upperGroup.svg);
+        background-image: url(./upperGroupNew.svg);
         background-repeat: no-repeat;
         position: absolute;
         bottom: 314px;
