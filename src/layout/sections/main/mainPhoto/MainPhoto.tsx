@@ -3,7 +3,7 @@ import {theme} from "../../../../styles/Theme.ts";
 /*import myPhotoForMain from '../../../../assets/images/main/myPhotoForMain.jpg';*/
 import originalPhotoFromFigma from "../../../../assets/images/main/originalPhotoForMain.png";
 
-export const MainRightSide = () => {
+export const MainPhoto = () => {
     return (
         <StyledMainRightSide>
             {/*<Group1/>*/}

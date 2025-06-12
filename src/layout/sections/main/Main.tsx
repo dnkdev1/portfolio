@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import {Container} from "../../../components/Container.ts";
-import {MainLeftSide} from "./mainLeftSide/MainLeftSide.tsx";
-import {MainRightSide} from "./mainRightSide/MainRightSide.tsx";
+import {MainText} from "./mainText/MainText.tsx";
+import {MainPhoto} from "./mainPhoto/MainPhoto.tsx";
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
                 <MainsWrapper>
-                    <MainLeftSide/>
-                    <MainRightSide/>
+                    <MainText/>
+                    <MainPhoto/>
                 </MainsWrapper>
             </Container>
         </StyledMain>

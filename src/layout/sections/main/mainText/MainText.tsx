@@ -3,7 +3,7 @@ import {theme} from "../../../../styles/Theme.ts";
 import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
 import {Button} from "../../../../components/Button.tsx";
 
-export const MainLeftSide = () => {
+export const MainText = () => {
     return (
         <StyledMainLeftSide>
             <StyledSpan>Hi 👋, I’m a</StyledSpan>
