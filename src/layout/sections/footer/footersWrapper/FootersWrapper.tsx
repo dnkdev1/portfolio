@@ -10,26 +10,44 @@ export const FootersWrapper = () => {
                 <Text>My social media links:</Text>
                 {/*<FlexWrapper gap={'65px'}>*/}
                 <LinksWrapper>
+                    <StyledLink href="https://www.linkedin.com/">
                     <Icon iconId={"linkedin"} width={"30px"} height={"30px"} viewBox={"0 0 30 30"}/>
+                    </StyledLink>
+                    <StyledLink href="https://www.whatsapp.com/">
                     <Icon iconId={"whatsapp"} width={"30px"} height={"30px"} viewBox={"0 0 30 30"}/>
+                </StyledLink>
+                    <StyledLink href="https://x.com/">
                     <Icon iconId={"twitter"} width={"30px"} height={"30px"} viewBox={"0 0 30 30"}/>
+                    </StyledLink>
+                    {/*<StyledLink href="https://www.dnkdev@outlook.com">*/}
                     <Icon iconId={"gmail"} width={"30px"} height={"30px"} viewBox={"0 0 30 30"}/>
-                </LinksWrapper>
+                    {/*</StyledLink>*/}
+                    </LinksWrapper>
                 {/*</FlexWrapper>*/}
             </SocialLinks>
             <GithubFooter>
                 <Text>More projects I’ve worked on</Text>
                 <FlexWrapper gap={'20px'}>
-                    <a href="https://github.com/dnkdev1">
+                    <StyledLink href="https://github.com/dnkdev1">
                         <Icon width={"30px"} height={"30px"} viewBox={"0 0 30 30"}
                               iconId={"githubFooter"}/>
-                    </a>
-                    <Text>@dnkdev1 on github</Text>
+                        @dnkdev1 on github
+                    </StyledLink>
+                    {/*<Text>@dnkdev1 on github</Text>*/}
                 </FlexWrapper>
             </GithubFooter>
         </StyledFootersWrapper>
     );
 };
+
+const StyledLink=styled.a`
+    font-family: "Be Vietnam";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    `
 
 const StyledFootersWrapper = styled.div`
     display: flex;
