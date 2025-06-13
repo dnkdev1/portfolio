@@ -1,11 +1,12 @@
 import {Icon} from "./icon/Icon.tsx";
 import styled from "styled-components";
 
-type LinkPropsType  = {
+type LinkPropsType = {
     href: string
     text: string
     withLeftIcon?: boolean
     withRightIcon?: boolean
+    isHoverTrue?: boolean
 }
 
 export const Link = ({href, text, withLeftIcon, withRightIcon}: LinkPropsType) => {
@@ -19,15 +20,13 @@ export const Link = ({href, text, withLeftIcon, withRightIcon}: LinkPropsType) =
 }
 
 const StyledLink = styled.a`
-color: black;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
     gap: 4px;
-    
-    
-    
+
     &:hover {
         color: red;
     }

@@ -6,18 +6,6 @@ import {useState} from "react";
 
 export const MobileMenu = () => {
 
-    //как создать в WebStorm создать проект-sandBox с TypeScript и React для того чтобы потренировать себя в частности useState
-    //
-
-    //вот у меня есть твой телеграмм. Принято ли писать в телеграмм преподавателям в межурочное время и отвечают ли они(в частности ты и Виктор Левитин телеграмма которого у меня нет)?
-    //
-
-    //правильно ли я понимаю что в !isOpen ! меняет isOpen: bool на false. Правильно ли я понимаю что !isOpen меняет bool на "неОткрыт"
-    //
-
-    //почему когда мы инициализируем значение переменной isOpen мы не пишем useState(isOpen=false), тоесть не присваеваем значение самой переменной isOpen ?
-    //
-
     const [isOpen, setIsOpen] = useState(false)
     const onClickHandler = () => {setIsOpen(!isOpen)}
 
@@ -29,9 +17,32 @@ export const MobileMenu = () => {
             {/*{isOpen &&*/}
                 <MobileMenuPopup isOpen={isOpen}>
                     <ul>
-                        <Link href={"#Skills"} text={"Skills"} withLeftIcon={false}></Link>
+                        {/*<Link href={"#Skills"} text={"Skills"} withLeftIcon={false}></Link>
                         <Link href={"#Projects"} text={"Projects"} withLeftIcon={true}></Link>
-                        <Link href={"#Contacts"} text={"Contact me"} withLeftIcon={false}></Link>
+                        <Link href={"#Contacts"} text={"Contact me"} withLeftIcon={false}></Link>*/}
+
+                        <StyledLink href={"#Skills"}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 32 32">
+                                <path fill="#e84949" d="M30 30h-8V4h8zm-6-2h4V6h-4zm-4 2h-8V12h8zm-6-2h4V14h-4zm-4 2H2V18h8zm-6-2h4v-8H4z"/>
+                            </svg>
+                            Skills
+                        </StyledLink>
+
+                        <StyledLink href={"#Projects"}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 256 256">
+                                <path fill="#e84949" d="M90 144v-16a6 6 0 0 1 12 0v16a6 6 0 0 1-12 0m38 6a6 6 0 0 0 6-6v-24a6 6 0 0 0-12 0v24a6 6 0 0 0 6 6m32 0a6 6 0 0 0 6-6v-32a6 6 0 0 0-12 0v32a6 6 0 0 0 6 6m54-72v100h10a6 6 0 0 1 0 12h-90v20.84a22 22 0 1 1-12 0V190H32a6 6 0 0 1 0-12h10V78h-2a14 14 0 0 1-14-14V48a14 14 0 0 1 14-14h176a14 14 0 0 1 14 14v16a14 14 0 0 1-14 14Zm-86 144a10 10 0 1 0 10 10a10 10 0 0 0-10-10M40 66h176a2 2 0 0 0 2-2V48a2 2 0 0 0-2-2H40a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2m162 12H54v100h148Z"/>
+                            </svg>
+                            Projects
+                        </StyledLink>
+
+                        <StyledLink href={"#Contacts"}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24">
+                                <path fill="#e84949" d="M19 19H5V5h14m0-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-2.5 13.25c0-1.5-3-2.25-4.5-2.25s-4.5.75-4.5 2.25V17h9M12 12.25A2.25 2.25 0 0 0 14.25 10A2.25 2.25 0 0 0 12 7.75A2.25 2.25 0 0 0 9.75 10A2.25 2.25 0 0 0 12 12.25"/>
+                            </svg>
+                            Contact me
+                        </StyledLink>
+
+
                     </ul>
                 </MobileMenuPopup>
             {/*}*/}
@@ -50,6 +61,27 @@ const StyledMobileMenu = styled.nav`
         display: block;
         gap: 30px;
         justify-content: center;
+    }
+`
+
+const StyledLink = styled.a`
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 4px;
+    
+    &:hover {
+        color: #e84949;
+    }
+    
+    & svg {
+        opacity: 0;
+    }
+    
+    &:hover svg {
+        opacity: 1;
     }
 `
 
